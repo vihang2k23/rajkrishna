@@ -23,7 +23,7 @@
               <li><NuxtLink to="/about">About</NuxtLink></li>
               <li><NuxtLink to="/services">Services</NuxtLink></li>
               <li><NuxtLink to="/projects">Projects</NuxtLink></li>
-              <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+              
               <li><NuxtLink to="/contact">Contact</NuxtLink></li>
             </ul>
           </div>
@@ -51,8 +51,7 @@
         <div class="footer-bottom">
           <p>&copy; 2025 Ataru Renew. All rights reserved.</p>
           <div class="legal-links">
-            <NuxtLink to="/privacy">Privacy Policy</NuxtLink>
-            <NuxtLink to="/terms">Terms of Service</NuxtLink>
+       
           </div>
         </div>
       </div>
