@@ -8,7 +8,7 @@
         <div class="about-grid">
           <div class="about-text">
             <h2>Our Story</h2>
-            <p>Founded in 2015, Ataru Renew has been at the forefront of sustainable development and environmental renewal. Our journey began with a simple vision: to create a world where human progress and environmental stewardship go hand in hand.</p>
+            <p>Founded in 2015, Rajkrishna has been at the forefront of sustainable development and environmental renewal. Our journey began with a simple vision: to create a world where human progress and environmental stewardship go hand in hand.</p>
             <p>Today, we're proud to have completed over 200 projects across multiple countries, each contributing to a more sustainable future.</p>
 
             <h2>Our Mission</h2>
@@ -25,7 +25,7 @@
           </div>
 
           <div class="about-image">
-            <img src="/image.png" alt="About Ataru Renew" />
+            <img src="/image.png" alt="About Rajkrishna" />
           </div>
         </div>
       </div>

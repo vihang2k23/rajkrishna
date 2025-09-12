@@ -7,13 +7,13 @@
       <div class="container">
         <div class="contact-grid">
           <!-- Contact Info -->
-          <div class="contact-info card">
+          <div class="contact-info card-3d">
             <h2>Get In Touch</h2>
             <p>We'd love to hear from you. Fill out the form or use the contact info below.</p>
 
             <div class="contact-details">
               <div class="contact-item">
-                <div class="contact-icon floating">
+                <div class="contact-icon">
                   <Icon name="mdi:map-marker" />
                 </div>
                 <div>
@@ -23,7 +23,7 @@
               </div>
 
               <div class="contact-item">
-                <div class="contact-icon floating">
+                <div class="contact-icon">
                   <Icon name="mdi:phone" />
                 </div>
                 <div>
@@ -33,7 +33,7 @@
               </div>
 
               <div class="contact-item">
-                <div class="contact-icon floating">
+                <div class="contact-icon">
                   <Icon name="mdi:email" />
                 </div>
                 <div>
@@ -55,34 +55,34 @@
           </div>
 
           <!-- Contact Form -->
-          <div class="contact-form card">
+          <div class="contact-form card-3d">
             <form @submit.prevent="submitForm">
               <div class="form-group">
-                <input type="text" id="name" v-model="formData.name" required />
+                <input type="text" id="name" v-model="formData.name" required placeholder=" " />
                 <label for="name">Full Name</label>
               </div>
 
               <div class="form-group">
-                <input type="email" id="email" v-model="formData.email" required />
+                <input type="email" id="email" v-model="formData.email" required placeholder=" " />
                 <label for="email">Email Address</label>
               </div>
 
               <div class="form-group">
-                <input type="tel" id="phone" v-model="formData.phone" />
+                <input type="tel" id="phone" v-model="formData.phone" placeholder=" " />
                 <label for="phone">Phone Number</label>
               </div>
 
               <div class="form-group">
-                <input type="text" id="subject" v-model="formData.subject" required />
+                <input type="text" id="subject" v-model="formData.subject" required placeholder=" " />
                 <label for="subject">Subject</label>
               </div>
 
               <div class="form-group">
-                <textarea id="message" v-model="formData.message" rows="5" required></textarea>
+                <textarea id="message" v-model="formData.message" rows="5" required placeholder=" "></textarea>
                 <label for="message">Message</label>
               </div>
 
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" class="btn-3d">Send Message</button>
             </form>
           </div>
         </div>
@@ -90,8 +90,11 @@
     </section>
 
     <!-- Map -->
-    <div class="map card">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.621465758367!2d-74.0059493486781!3d40.71278267922514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1e1c2c0e29%3A0x564c3c64c3a3a1!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sus!4v1645229877671!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="map card-3d">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18..."
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
     </div>
   </div>
 </template>
@@ -117,10 +120,10 @@ const submitForm = () => {
 </script>
 
 <style scoped>
-/* Overall Section */
+/* Background */
 .contact-content {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #e0f7f1 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #f0f9f6, #e0f2f1, #ffffff);
 }
 
 /* Grid Layout */
@@ -130,162 +133,143 @@ const submitForm = () => {
   gap: 4rem;
 }
 
-/* Card Styles */
-.card {
+/* Card with 3D Effect */
+.card-3d {
   background: #fff;
-  border-radius: 20px;
+  border-radius: 18px;
   padding: 2rem;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15), 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s, box-shadow 0.4s;
 }
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+.card-3d:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
 }
 
 /* Contact Info */
 .contact-info h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #4CAF50, #81C784);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2e7d32;
 }
-
 .contact-info p {
   color: #555;
   margin-bottom: 2rem;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 /* Contact Items */
 .contact-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
-
 .contact-icon {
-  width: 60px;
-  height: 60px;
-  background: #4CAF50;
-  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #4CAF50, #66bb6a);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  color: #fff;
+  font-size: 1.3rem;
+  box-shadow: 0 5px 12px rgba(76,175,80,0.4);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .contact-icon:hover {
-  transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 10px 25px rgba(76,175,80,0.3);
+  transform: rotate(10deg) scale(1.1);
+  box-shadow: 0 8px 20px rgba(76,175,80,0.5);
 }
 
-.contact-icon :deep(svg) {
-  width: 28px;
-  height: 28px;
-  color: #fff;
-}
-
-/* Social Section */
+/* Social Links */
 .social-links {
   display: flex;
   gap: 1rem;
+  margin-top: 1rem;
 }
-
 .social-links a {
-  width: 50px;
-  height: 50px;
-  background: #4CAF50;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
+  background: linear-gradient(135deg, #4CAF50, #66bb6a);
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .social-links a:hover {
-  transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 10px 25px rgba(76,175,80,0.3);
+  transform: scale(1.15) rotate(-10deg);
+  box-shadow: 0 8px 20px rgba(76,175,80,0.4);
 }
 
-.social-links :deep(svg) {
-  width: 24px;
-  height: 24px;
-  color: #fff;
-}
-
-/* Form Styles */
+/* Form Inputs */
 .form-group {
   position: relative;
   margin-bottom: 1.5rem;
 }
-
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 1rem 1rem 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  padding: 1rem;
+  border: 2px solid #eee;
+  border-radius: 12px;
   font-size: 1rem;
   background: #f9f9f9;
   transition: all 0.3s;
 }
-
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4CAF50;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
 .form-group label {
   position: absolute;
   top: 1rem;
   left: 1rem;
   color: #777;
   font-size: 1rem;
-  pointer-events: none;
   transition: all 0.3s;
 }
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #4CAF50;
-}
-
 .form-group input:focus + label,
 .form-group input:not(:placeholder-shown) + label,
 .form-group textarea:focus + label,
 .form-group textarea:not(:placeholder-shown) + label {
-  top: -0.5rem;
-  left: 1rem;
-  font-size: 0.85rem;
-  color: #4CAF50;
+  top: -0.6rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
   background: #fff;
-  padding: 0 0.25rem;
+  color: #4CAF50;
+  padding: 0 0.3rem;
 }
 
-/* Buttons */
-.btn-primary {
+/* Button */
+.btn-3d {
   display: inline-block;
-  background: linear-gradient(90deg, #4CAF50, #81C784);
-  color: #fff;
-  padding: 0.8rem 2rem;
+  padding: 0.9rem 2.2rem;
   border-radius: 50px;
   font-weight: 600;
-  text-decoration: none;
+  border: none;
+  background: linear-gradient(135deg, #4CAF50, #66bb6a);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(76,175,80,0.3);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
-.btn-primary:hover {
+.btn-3d:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(76, 175, 80, 0.4);
+  box-shadow: 0 10px 25px rgba(76,175,80,0.4);
 }
 
-/* Map Styling */
+/* Map */
 .map {
   margin-top: 4rem;
-  border-radius: 20px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 /* Responsive */
@@ -295,4 +279,123 @@ const submitForm = () => {
     gap: 3rem;
   }
 }
+/* Card - modern flat style */
+.card-flat {
+  background: #fff;
+  border: 1px solid #e5e7eb; /* subtle gray border */
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.25s, border-color 0.25s;
+}
+.card-flat:hover {
+  transform: translateY(-4px);
+  border-color: #4CAF50; /* accent border on hover */
+}
+
+/* Contact Icon */
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4CAF50, #66bb6a);
+  color: #fff;
+  font-size: 1.2rem;
+  transition: transform 0.25s;
+}
+.contact-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Social Links */
+.social-links a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  transition: background 0.3s, transform 0.3s;
+}
+.social-links a:hover {
+  background: linear-gradient(135deg, #4CAF50, #66bb6a);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Form Inputs */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+  outline: none;
+}
+
+/* Button */
+.btn-modern {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  background: linear-gradient(135deg, #4CAF50, #66bb6a);
+  color: #fff;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.btn-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(76,175,80,0.3);
+}
+/* Contact Items */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.contact-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4CAF50;
+  font-size: 1.4rem;
+  background: none; /* ✅ remove background box */
+  border: none;     /* ✅ no border */
+  box-shadow: none; /* ✅ no shadow */
+  transition: transform 0.25s;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1); /* just a little bounce */
+}
+
+.contact-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+
 </style>
