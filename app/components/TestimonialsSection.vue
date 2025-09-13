@@ -10,7 +10,7 @@
       </div>
 
       <!-- Testimonials Cards -->
-      <div class="testimonials-slider">
+      <div class="testimonials-grid">
         <div
           v-for="(testimonial, index) in testimonials"
           :key="index"
@@ -66,9 +66,8 @@ const testimonials = [
 .section-header h2 {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #2c3e50;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #4caf50, #2e7d32);
+  background: linear-gradient(90deg, #efa72e, #2e7d32);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -81,47 +80,33 @@ const testimonials = [
   line-height: 1.6;
 }
 
-/* Slider Container */
-.testimonials-slider {
-  display: flex;
-  overflow-x: auto;
-  gap: 2rem;
-  scroll-behavior: smooth;
-  padding-bottom: 1rem;
-}
-
-.testimonials-slider::-webkit-scrollbar {
-  height: 8px;
-}
-.testimonials-slider::-webkit-scrollbar-thumb {
-  background: #4caf50;
-  border-radius: 10px;
-}
-.testimonials-slider::-webkit-scrollbar-track {
-  background: #e0e0e0;
+/* Grid Layout */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  justify-content: center;
 }
 
 /* Card */
 .testimonial-card {
-  min-width: 300px;
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06),
-              0 2px 6px rgba(0, 0, 0, 0.04);
-  transition: transform 0.4s, box-shadow 0.4s, background 0.3s;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeSlideUp 1s forwards;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08),
-              0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
   background: #f9fefb;
 }
-
 
 .testimonial-card:nth-child(1) {
   animation-delay: 0.3s;
@@ -133,13 +118,11 @@ const testimonials = [
   animation-delay: 0.9s;
 }
 
-
-
 /* Quote Icon */
 .quote-icon {
   font-size: 3rem;
   font-weight: bold;
-  color: #4caf50;
+  color: #efa72e;
   margin-bottom: 1rem;
   line-height: 1;
 }
@@ -170,6 +153,13 @@ const testimonials = [
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .section-header h2 {
+    font-size: 2.2rem;
   }
 }
 </style>

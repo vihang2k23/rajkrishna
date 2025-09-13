@@ -65,7 +65,7 @@ const toggleMobileMenu = () => {
 <style scoped>
 /* Header Wrapper */
 .header {
-  background: #ffffff;
+  background: #FFFFFF; /* White background */
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
@@ -100,14 +100,14 @@ const toggleMobileMenu = () => {
 }
 .navigation a {
   text-decoration: none;
-  color: #2c3e50;
+  color: #092B47; /* Blue text */
   font-weight: 500;
   position: relative;
   transition: color 0.3s;
 }
 .navigation a:hover,
 .navigation a.nuxt-link-active {
-  color: #4caf50;
+  color: #EFA72E; /* Yellow on hover */
 }
 .navigation a::after {
   content: "";
@@ -116,7 +116,7 @@ const toggleMobileMenu = () => {
   height: 2px;
   left: 0;
   bottom: -4px;
-  background: #4caf50;
+  background: #EFA72E; /* Yellow underline */
   transition: width 0.3s;
 }
 .navigation a:hover::after,
@@ -134,7 +134,7 @@ const toggleMobileMenu = () => {
 .mobile-menu-button span {
   width: 26px;
   height: 3px;
-  background: #2c3e50;
+  background: #092B47; /* Blue bars */
   margin: 4px 0;
   border-radius: 4px;
   transition: 0.4s;
@@ -152,7 +152,7 @@ const toggleMobileMenu = () => {
 
 /* Mobile Menu */
 .mobile-menu {
-  background: #ffffff;
+  background: #FFFFFF; /* White dropdown */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   padding: 1.5rem;
 }
@@ -164,13 +164,13 @@ const toggleMobileMenu = () => {
   display: block;
   padding: 0.8rem 0;
   text-decoration: none;
-  color: #2c3e50;
+  color: #092B47; /* Blue text */
   font-weight: 500;
   border-bottom: 1px solid #eee;
   transition: color 0.3s;
 }
 .mobile-menu a:hover {
-  color: #4caf50;
+  color: #EFA72E; /* Yellow hover */
 }
 
 /* Transition */
@@ -197,3 +197,4 @@ const toggleMobileMenu = () => {
   }
 }
 </style>
+

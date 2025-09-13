@@ -121,7 +121,7 @@
   .project-details h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    background: linear-gradient(90deg, #4CAF50, #81C784);
+    background: linear-gradient(90deg, #EFA72E, #81C784);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -146,7 +146,7 @@
   
   .project-details li:before {
     content: '•';
-    color: #4CAF50;
+    color: #EFA72E;
     position: absolute;
     left: 0;
     font-weight: bold;
@@ -154,7 +154,7 @@
   
   .btn-primary {
     display: inline-block;
-    background: linear-gradient(90deg, #4CAF50, #81C784);
+    background: linear-gradient(90deg, #EFA72E, #81C784);
     color: #fff;
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -178,5 +178,113 @@
       direction: ltr;
     }
   }
+  .projects-content {
+  padding: 6rem 0;
+  background: #FFFFFF; /* white background */
+}
+
+.projects-grid {
+  display: grid;
+  gap: 4rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  background: #FFFFFF;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.project-card.reverse {
+  direction: rtl;
+}
+
+.project-card.reverse > * {
+  direction: ltr;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 0;
+  transition: transform 0.5s;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-details {
+  padding: 2rem;
+}
+
+.project-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #092B47; /* Blue title */
+}
+
+.project-details p {
+  color: #092B47; /* Blue text */
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-details ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.project-details li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #092B47; /* Blue text */
+}
+
+.project-details li:before {
+  content: '•';
+  color: #EFA72E; /* Yellow/Orange bullet */
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #EFA72E; /* Yellow/Orange button */
+  color: #FFFFFF;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(239,167,46,0.4); /* subtle yellow glow */
+}
+
+@media (max-width: 968px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-card.reverse {
+    direction: ltr;
+  }
+}
+
   </style>
   

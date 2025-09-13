@@ -3,12 +3,16 @@
   <section class="team">
     <div class="team-background"></div>
     <div class="container">
+      <!-- Section Header -->
       <div class="section-header">
-        <h2>Our Leadership Team</h2>
+        <h2 class="gradient-text">Our Leadership Team</h2>
         <p>Meet the experts driving our mission forward</p>
       </div>
+
+      <!-- Team Grid -->
       <div class="team-grid">
         <div v-for="(member, index) in teamMembers" :key="index" class="team-member">
+          <!-- Image with Overlay -->
           <div class="member-image">
             <img :src="member.image" :alt="member.name" />
             <div class="member-overlay">
@@ -19,6 +23,7 @@
               </div>
             </div>
           </div>
+          <!-- Info -->
           <div class="member-info">
             <h3>{{ member.name }}</h3>
             <p class="position">{{ member.position }}</p>
@@ -77,7 +82,7 @@ const getSocialIcon = (platform) => {
 .team {
   position: relative;
   padding: 6rem 0;
-  background: #f8f9fa;
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -88,7 +93,7 @@ const getSocialIcon = (platform) => {
   width: 100%;
   height: 100%;
   background: url('/image.png') center/cover no-repeat;
-  opacity: 0.1;
+  opacity: 0.05;
   z-index: 0;
 }
 
@@ -104,34 +109,43 @@ const getSocialIcon = (platform) => {
 
 .section-header h2 {
   font-size: 2.5rem;
-  color: #2c3e50;
   margin-bottom: 0.5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #092B47, #EFA72E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-header p {
   font-size: 1.1rem;
-  color: #7f8c8d;
+  color: #092B47;
+  opacity: 0.8;
 }
 
+/* Team Grid */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
 }
 
+/* Team Member Card */
 .team-member {
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s, box-shadow 0.4s;
 }
 
 .team-member:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
 }
 
+/* Member Image */
 .member-image {
   position: relative;
   height: 300px;
@@ -146,16 +160,13 @@ const getSocialIcon = (platform) => {
 }
 
 .team-member:hover .member-image img {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .member-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(76, 175, 80, 0.85);
+  inset: 0;
+  background: rgba(9, 43, 71, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,6 +178,7 @@ const getSocialIcon = (platform) => {
   opacity: 1;
 }
 
+/* Social Links */
 .social-links {
   display: flex;
   gap: 1rem;
@@ -185,15 +197,16 @@ const getSocialIcon = (platform) => {
 
 .social-links a:hover {
   transform: scale(1.15);
-  background: #2c3e50;
+  background: #092B47;
 }
 
 .social-links :deep(svg) {
   width: 22px;
   height: 22px;
-  color: #4CAF50;
+  color: #EFA72E;
 }
 
+/* Member Info */
 .member-info {
   padding: 2rem 1.5rem;
   text-align: center;
@@ -201,18 +214,19 @@ const getSocialIcon = (platform) => {
 
 .member-info h3 {
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: #092B47;
   font-size: 1.3rem;
 }
 
 .position {
-  color: #4CAF50;
+  color: #EFA72E;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .bio {
-  color: #7f8c8d;
+  color: #092B47;
+  opacity: 0.75;
   line-height: 1.6;
   font-size: 0.95rem;
 }

@@ -3,6 +3,7 @@
     <div>
       <HeroSection />
       <FeaturesSection />
+      <BrandsView/>
       <ServicesOverview />
       <ProjectsShowcase />
       <TestimonialsSection />

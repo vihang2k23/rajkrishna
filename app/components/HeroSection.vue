@@ -302,9 +302,9 @@ body {
 }
 
 .btn-primary {
-  background: #4CAF50;
+  background: #EFA72E;
   color: white;
-  border: 2px solid #4CAF50;
+  border: 2px solid #EFA72E;
 }
 
 .btn-primary:hover {

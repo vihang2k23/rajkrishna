@@ -47,7 +47,7 @@ useHead({
 <style scoped>
 .about-content {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);
+  background: #FFFFFF; /* White background */
 }
 
 .about-grid {
@@ -58,10 +58,11 @@ useHead({
 }
 
 .about-text h2 {
-  color: #2c3e50;
+  color: #092B47; /* Blue headings */
   margin: 2rem 0 1rem;
   position: relative;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .about-text h2::after {
@@ -69,7 +70,7 @@ useHead({
   display: block;
   width: 50px;
   height: 3px;
-  background: #4CAF50;
+  background: #EFA72E; /* Yellow underline */
   margin-top: 0.5rem;
   border-radius: 2px;
 }
@@ -77,7 +78,7 @@ useHead({
 .about-text p {
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #555;
+  color: #092B47; /* Blue text */
   font-size: 1rem;
 }
 
@@ -91,13 +92,13 @@ useHead({
   margin-bottom: 1rem;
   padding-left: 2rem;
   position: relative;
-  color: #555;
+  color: #092B47; /* Blue list items */
   font-size: 1rem;
 }
 
 .about-text li::before {
   content: "✓";
-  color: #4CAF50;
+  color: #EFA72E; /* Yellow checkmark */
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -106,12 +107,13 @@ useHead({
 .about-image img {
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s;
+  box-shadow: 0 15px 40px rgba(9, 43, 71, 0.2); /* Blue shadow accent */
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .about-image img:hover {
   transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(239, 167, 46, 0.3); /* Yellow hover glow */
 }
 
 @media (max-width: 968px) {

@@ -61,10 +61,11 @@ const projects = [
 <style scoped>
 .projects {
   padding: 6rem 1rem;
-  background: linear-gradient(135deg, #f0f4f8, #e8f5e9);
+  background: linear-gradient(135deg, #f0f4f8, #e8f5e9);  
   position: relative;
 }
 
+/* Section Header */
 .section-header {
   text-align: center;
   margin-bottom: 3.5rem;
@@ -73,18 +74,18 @@ const projects = [
 .section-header h2 {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #2c3e50;
-  background: linear-gradient(90deg, #4caf50, #2e7d32);
+  background: linear-gradient(90deg, #092B47, #EFA72E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .section-header p {
-  color: #607d8b;
+  color: #092B47;
   max-width: 650px;
   margin: 0 auto;
   font-size: 1.1rem;
   line-height: 1.6;
+  opacity: 0.85;
 }
 
 /* Grid */
@@ -97,19 +98,19 @@ const projects = [
 
 /* Project Card */
 .project-item {
-  background: #fff;
+  background: #FFFFFF;
   border-radius: 18px;
   overflow: hidden;
   text-align: center;
   padding: 1.5rem 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 25px rgba(9, 43, 71, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
 }
 
 .project-item:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 15px 40px rgba(9, 43, 71, 0.25);
 }
 
 /* Image with Overlay */
@@ -136,8 +137,8 @@ const projects = [
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(76, 175, 80, 0.7),
-    rgba(0, 0, 0, 0.2)
+    rgba(239, 167, 46, 0.85),
+    rgba(9, 43, 71, 0.4)
   );
   opacity: 0;
   display: flex;
@@ -151,23 +152,26 @@ const projects = [
 }
 
 .view-text {
-  color: #fff;
+  color: #FFFFFF;
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 1px;
+  background: rgba(9, 43, 71, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
 }
 
 /* Title & Description */
 .project-title {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: #092B47;
   margin-bottom: 0.5rem;
 }
 
 .project-desc {
   font-size: 1rem;
-  color: #555;
+  color: #333333;
   line-height: 1.6;
   padding: 0 0.5rem;
 }
@@ -179,3 +183,4 @@ const projects = [
   }
 }
 </style>
+

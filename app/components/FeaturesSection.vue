@@ -56,15 +56,15 @@ const features = [
   },
 ];
 </script>
-
 <style scoped>
 .features {
   padding: 6rem 1rem;
-  background: linear-gradient(135deg, #f4f9f4, #f8f9fa);
+  background: #ffffff; /* Clean white */
   position: relative;
   overflow: hidden;
 }
 
+/* Section Header */
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
@@ -74,22 +74,22 @@ const features = [
 .section-header h2 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
-  color: #2c3e50;
-  font-weight: 700;
-  background: linear-gradient(90deg, #4caf50, #2e7d32);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #092B47, #EFA72E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .section-header p {
   font-size: 1.2rem;
-  color: #607d8b;
+  color: #555;
   max-width: 650px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
-/* Grid */
+/* Features Grid */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -99,11 +99,12 @@ const features = [
 /* Feature Card */
 .feature-card {
   background: #fff;
-  padding: 2.5rem 2rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding: 2.8rem 2rem;
+  border-radius: 24px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   text-align: center;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: all 0.5s ease;
   position: relative;
   overflow: hidden;
 }
@@ -111,63 +112,67 @@ const features = [
 .feature-card::before {
   content: "";
   position: absolute;
-  top: -40%;
-  left: -40%;
-  width: 180%;
-  height: 180%;
-  background: radial-gradient(
-    circle at center,
-    rgba(76, 175, 80, 0.08),
-    transparent
-  );
-  opacity: 0;
-  transition: opacity 0.5s;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(239, 167, 46, 0.08), transparent 70%);
+  transform: scale(0);
+  transition: transform 0.6s ease;
+  z-index: 0;
 }
 
 .feature-card:hover::before {
-  opacity: 1;
+  transform: scale(1);
 }
 
 .feature-card:hover {
-  transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
 }
 
 /* Icon */
 .feature-icon {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, #4caf50, #81c784);
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #EFA72E, #092B47);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
-  transition: transform 0.6s ease;
+  transition: transform 0.4s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
 }
 
 .feature-card:hover .feature-icon {
-  transform: rotate(20deg) scale(1.1);
+  transform: rotate(10deg) scale(1.15);
 }
 
 .feature-icon :deep(svg) {
-  width: 42px;
-  height: 42px;
-  color: white;
+  width: 46px;
+  height: 46px;
+  color: #fff;
 }
 
-/* Title & Text */
+/* Title & Description */
 .feature-card h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  color: #2c3e50;
-  font-weight: 600;
+  color: #092B47;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-card p {
-  color: #607d8b;
-  line-height: 1.6;
+  color: #555;
+  line-height: 1.7;
   font-size: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 /* Responsive */
@@ -183,5 +188,160 @@ const features = [
   .feature-card {
     padding: 2rem 1.5rem;
   }
+
+  .feature-icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .feature-icon :deep(svg) {
+    width: 36px;
+    height: 36px;
+  }
 }
+.features {
+  padding: 6rem 1rem;
+  background: #FFFFFF; /* clean white */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #092B47, #EFA72E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: #092B47; /* Blue for text */
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+}
+
+/* Feature Card */
+.feature-card {
+  background: #FFFFFF;
+  padding: 2.8rem 2rem;
+  border-radius: 24px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(239, 167, 46, 0.08), transparent 70%);
+  transform: scale(0);
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.feature-card:hover::before {
+  transform: scale(1);
+}
+
+.feature-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon */
+.feature-icon {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #EFA72E, #092B47); /* Yellow → Blue gradient */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transition: transform 0.4s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card:hover .feature-icon {
+  transform: rotate(10deg) scale(1.15);
+}
+
+.feature-icon :deep(svg) {
+  width: 46px;
+  height: 46px;
+  color: #FFFFFF; /* icons white on gradient */
+}
+
+/* Title & Description */
+.feature-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #092B47; /* Blue title */
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card p {
+  color: #092B47; /* Blue description */
+  line-height: 1.7;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    padding: 4rem 1rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .feature-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .feature-icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .feature-icon :deep(svg) {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 </style>
+
+
+

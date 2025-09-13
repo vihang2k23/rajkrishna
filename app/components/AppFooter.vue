@@ -71,8 +71,8 @@
 
 <style scoped>
 .footer {
-  background: linear-gradient(135deg, #1e2a36, #2c3e50);
-  color: #ecf0f1;
+  background-color: #092B47; /* Blue */
+  color: #FFFFFF; /* White text */
   padding: 4rem 0 1.5rem;
   font-family: "Inter", sans-serif;
 }
@@ -89,7 +89,7 @@
   margin-bottom: 1.2rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #4caf50;
+  color: #EFA72E; /* Yellow */
 }
 
 /* Lists */
@@ -103,13 +103,13 @@
 }
 
 .footer-section a {
-  color: #bdc3c7;
+  color: #FFFFFF; /* White links */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-  color: #4caf50;
+  color: #EFA72E; /* Yellow on hover */
 }
 
 /* Brand / About */
@@ -119,7 +119,7 @@
 }
 
 .tagline {
-  color: #bdc3c7;
+  color: #FFFFFF;
   font-size: 0.95rem;
   margin-bottom: 1.2rem;
   line-height: 1.5;
@@ -136,14 +136,15 @@
   justify-content: center;
   width: 42px;
   height: 42px;
-  background: #34495e;
+  background: #FFFFFF; /* White circles */
   border-radius: 50%;
   transition: all 0.3s ease;
-  color: #ecf0f1;
+  color: #092B47; /* Blue icons */
 }
 
 .social-links a:hover {
-  background: #4caf50;
+  background: #EFA72E; /* Yellow on hover */
+  color: #FFFFFF;
   transform: translateY(-3px);
 }
 
@@ -152,13 +153,13 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  color: #bdc3c7;
+  color: #FFFFFF;
   font-size: 0.95rem;
 }
 
 /* Bottom bar */
 .footer-bottom {
-  border-top: 1px solid #3d4e5e;
+  border-top: 1px solid #FFFFFF;
   padding-top: 1.2rem;
   display: flex;
   justify-content: space-between;
@@ -166,7 +167,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   font-size: 0.9rem;
-  color: #95a5a6;
+  color: #FFFFFF;
 }
 
 .legal-links {
@@ -175,12 +176,12 @@
 }
 
 .legal-links a {
-  color: #95a5a6;
+  color: #FFFFFF;
   transition: color 0.3s ease;
 }
 
 .legal-links a:hover {
-  color: #4caf50;
+  color: #EFA72E;
 }
 
 /* Responsive */

@@ -8,6 +8,7 @@
         class="service-item" 
         :class="{ 'reverse': index % 2 !== 0 }"
       >
+        <!-- Text Content -->
         <div class="service-content">
           <h2 class="gradient-text">{{ service.title }}</h2>
           <p>{{ service.description }}</p>
@@ -16,8 +17,12 @@
               {{ feature }}
             </li>
           </ul>
-          <NuxtLink :to="`/services/${service.slug}`" class="btn btn-primary">Learn More</NuxtLink>
+          <NuxtLink :to="`/services/${service.slug}`" class="btn btn-primary">
+            Learn More
+          </NuxtLink>
         </div>
+
+        <!-- Image with decorative element -->
         <div class="service-image-wrapper">
           <div class="service-image-outer">
             <img :src="service.image" :alt="service.title" />
@@ -41,7 +46,7 @@ const services = [
       'Energy storage systems'
     ],
     image: '/image.png',
-    link: '/services/renewable-energy'
+    slug: 'renewable-energy'
   },
   {
     title: 'Sustainable Construction',
@@ -53,7 +58,7 @@ const services = [
       'LEED certification consulting'
     ],
     image: '/image.png',
-    link: '/services/sustainable-construction'
+    slug: 'sustainable-construction'
   },
   {
     title: 'Environmental Consulting',
@@ -65,7 +70,7 @@ const services = [
       'Carbon footprint analysis'
     ],
     image: '/image.png',
-    link: '/services/environmental-consulting'
+    slug: 'environmental-consulting'
   }
 ]
 </script>
@@ -73,7 +78,7 @@ const services = [
 <style scoped>
 .services-detailed {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #e0f7f1 0%, #ffffff 100%);
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -84,7 +89,6 @@ const services = [
   align-items: center;
   gap: 4rem;
   margin-bottom: 6rem;
-  perspective: 1000px;
 }
 
 .service-item.reverse {
@@ -97,14 +101,13 @@ const services = [
 }
 
 .service-content h2 {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   margin-bottom: 1.5rem;
-  position: relative;
   font-weight: 700;
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #4caf50, #81c784);
+  background: linear-gradient(90deg, #092B47, #EFA72E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -112,11 +115,11 @@ const services = [
 .service-content p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
+  color: #092B47;
   margin-bottom: 1.5rem;
 }
 
-/* Feature List Animation */
+/* Features */
 .service-content ul {
   list-style: none;
   padding-left: 0;
@@ -125,32 +128,21 @@ const services = [
 
 .feature-item {
   position: relative;
-  padding-left: 2.5rem;
+  padding-left: 2rem;
   margin-bottom: 1rem;
   font-size: 1rem;
-  color: #555;
-  transform: translateX(-20px);
-  opacity: 0;
-  animation: slideIn 0.5s forwards;
+  color: #092B47;
 }
 
 .feature-item::before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #4CAF50;
+  color: #EFA72E;
   font-weight: bold;
 }
 
-/* Slide-in animation */
-@keyframes slideIn {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Service Image with 3D tilt & shadow */
+/* Service Image */
 .service-image-wrapper {
   flex: 1;
 }
@@ -159,13 +151,12 @@ const services = [
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s;
 }
 
 .service-image-outer:hover {
-  transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+  transform: scale(1.05);
 }
 
 .service-image-outer img {
@@ -179,13 +170,13 @@ const services = [
   transform: scale(1.1);
 }
 
-/* Decorative floating shape behind image */
+/* Decorative shape */
 .decorative-shape {
   position: absolute;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: rgba(76, 175, 80, 0.2);
+  background: rgba(239, 167, 46, 0.25);
   top: -20px;
   right: -20px;
   animation: float 3s ease-in-out infinite alternate;
@@ -194,13 +185,13 @@ const services = [
 
 @keyframes float {
   0% { transform: translateY(0) rotate(0deg); }
-  100% { transform: translateY(-20px) rotate(15deg); }
+  100% { transform: translateY(-15px) rotate(10deg); }
 }
 
-/* Buttons */
+/* Button */
 .btn-primary {
   display: inline-block;
-  background: linear-gradient(90deg, #4caf50, #81c784);
+  background: linear-gradient(90deg, #092B47, #EFA72E);
   color: #fff;
   padding: 0.8rem 2rem;
   border-radius: 50px;
@@ -211,7 +202,7 @@ const services = [
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(76, 175, 80, 0.4);
+  box-shadow: 0 10px 25px rgba(9, 43, 71, 0.25);
 }
 
 /* Responsive */
