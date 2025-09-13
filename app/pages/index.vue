@@ -7,6 +7,7 @@
       <ServicesOverview />
       <ProjectsShowcase />
       <TestimonialsSection />
+      <Credential />
       <CTASection />
     </div>
   </template>

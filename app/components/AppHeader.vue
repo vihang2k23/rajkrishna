@@ -12,7 +12,7 @@
       <nav class="navigation">
         <ul>
           <li v-for="item in navItems" :key="item.path">
-            <NuxtLink :to="item.path">{{ item.label }}</NuxtLink>
+            <NuxtLink :to="item.path" :class="{ 'active-nav-item': isActive(item) }">{{ item.label }}</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -46,6 +46,9 @@
 
 <script setup>
 import { ref } from "vue";
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
 
 const navItems = [
   { path: "/", label: "Home" },
@@ -59,6 +62,10 @@ const mobileMenuOpen = ref(false);
 
 const toggleMobileMenu = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value;
+};
+
+const isActive = (item) => {
+  return item.path === route.path;
 };
 </script>
 
@@ -85,7 +92,7 @@ const toggleMobileMenu = () => {
 
 /* Logo */
 .logo img {
-  height: 48px;
+  height: 68px;
   transition: transform 0.3s ease;
 }
 .logo img:hover {
@@ -102,11 +109,12 @@ const toggleMobileMenu = () => {
   text-decoration: none;
   color: #092B47; /* Blue text */
   font-weight: 500;
+  font-size: 18px;
   position: relative;
   transition: color 0.3s;
 }
 .navigation a:hover,
-.navigation a.nuxt-link-active {
+.navigation a.active-nav-item {
   color: #EFA72E; /* Yellow on hover */
 }
 .navigation a::after {
