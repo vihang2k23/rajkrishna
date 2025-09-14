@@ -6,16 +6,18 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 const carouselConfig = {
   itemsToShow: 1,
   wrapAround: true,
-  autoplay: 2000,
+  autoplay: 3000,
   transition: 800,
+  slideEffect: 'fade'
 }
 
 const slides = [
-  { image: '/hero/images/hero-bg-1.jpg' },
-  { image: '/assets/images/hero-bg-2.jpg' },
-  { image: '/assets/images/hero-bg-3.jpg' },
-  { image: '/assets/images/hero-bg-4.jpg' },
-  { image: '/assets/images/hero-bg-5.jpg' },
+  { image: '/hero/bg-1.png' },
+  { image: '/hero/hero-bg-1.jpg' },
+  { image: '/hero/hero-bg-2.jpg' },
+  { image: '/hero/hero-bg-3.jpg' },
+  { image: '/hero/hero-bg-4.jpg' },
+  { image: '/hero/hero-bg-5.jpg' },
 ]
 
 </script>
@@ -25,12 +27,12 @@ const slides = [
     <div >
       <Carousel class="hero" v-bind="carouselConfig">
         <Slide v-for="slide in slides" :key="slide">
-          <img class="carousel-img" src="/hero/hero-bg-3.jpg" alt="slide.image">
+          <img class="carousel-img" :src="slide.image" alt="slide.image">
         </Slide>
 
         <template #addons>
           <Navigation />
-          <Pagination />
+          <!-- <Pagination /> -->
         </template>
       </Carousel>
     </div>
@@ -51,4 +53,6 @@ const slides = [
   height: 100%;
   object-fit: cover;
 }
+
+
 </style>

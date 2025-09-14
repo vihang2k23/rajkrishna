@@ -14,19 +14,19 @@
             <div class="contact-details">
               <div class="contact-item">
                 <div class="contact-icon">
-                  <Icon name="mdi:map-marker" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M12 19.35q3.05-2.8 4.525-5.087T18 10.2q0-2.725-1.737-4.462T12 4T7.738 5.738T6 10.2q0 1.775 1.475 4.063T12 19.35m0 1.975q-.35 0-.7-.125t-.625-.375Q9.05 19.325 7.8 17.9t-2.087-2.762t-1.275-2.575T4 10.2q0-3.75 2.413-5.975T12 2t5.588 2.225T20 10.2q0 1.125-.437 2.363t-1.275 2.575T16.2 17.9t-2.875 2.925q-.275.25-.625.375t-.7.125M12 12q.825 0 1.413-.587T14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12"/></svg>
                 </div>
-                <div>
+                <div class="contact-content-details">
                   <h3>Address</h3>
-                  <p>123 Green Street, Eco City, EC 12345</p>
+                  <p>Ground Floor, 2 - Shivali Apartment, Near N.C.C. Ground, Law Garden, Near Rangwala Flats, Ahmedabad - 380006</p>
                 </div>
               </div>
 
               <div class="contact-item">
                 <div class="contact-icon">
-                  <Icon name="mdi:phone" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="currentColor" d="M18.825 20.975q-3.3 0-6.337-1.163q-3.038-1.162-5.375-3.225q-2.338-2.062-3.725-4.875Q2 8.9 2 5.6q0-1.1.612-1.85Q3.225 3 4.35 3h2.325q.675 0 1.05.387q.375.388.525 1.113q.15.75.338 1.55q.187.8.437 1.425q.225.525.138.987q-.088.463-.513.888l-1.95 1.9q1.2 1.75 3.338 3.387q2.137 1.638 4.162 2.238l1.15-2.325q.225-.45.575-.612q.35-.163.975-.113q.65.05 1.288.05q.637 0 1.437-.05q.75-.05 1.263.4q.512.45.687 1.45l.4 2.25l.05.425q0 1.05-.862 1.838q-.863.787-2.338.787Z"/></svg>
                 </div>
-                <div>
+                <div class="contact-content-details">
                   <h3>Phone</h3>
                   <p>+1 (555) 123-4567</p>
                 </div>
@@ -34,9 +34,9 @@
 
               <div class="contact-item">
                 <div class="contact-icon">
-                  <Icon name="mdi:email" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE --><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 14H4V8l8 5l8-5zm-8-7L4 6h16z"/></svg>
                 </div>
-                <div>
+                <div class="contact-content-details">
                   <h3>Email</h3>
                   <p>info@rajkrishna.com</p>
                 </div>
@@ -46,10 +46,18 @@
             <div class="social-section">
               <h3>Follow Us</h3>
               <div class="social-links">
-                <a href="#"><Icon name="fa6-brands:facebook" /></a>
-                <a href="#"><Icon name="fa6-brands:twitter" /></a>
-                <a href="#"><Icon name="fa6-brands:linkedin" /></a>
-                <a href="#"><Icon name="fa6-brands:instagram" /></a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Remix Icon by Remix Design - https://github.com/Remix-Design/RemixIcon/blob/master/License --><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg>
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Remix Icon by Remix Design - https://github.com/Remix-Design/RemixIcon/blob/master/License --><path fill="currentColor" d="M10.488 14.651L15.25 21h7l-7.858-10.478L20.93 3h-2.65l-5.117 5.886L8.75 3h-7l7.51 10.015L2.32 21h2.65zM16.25 19L5.75 5h2l10.5 14z"/></svg>
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Remix Icon by Remix Design - https://github.com/Remix-Design/RemixIcon/blob/master/License --><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"/></svg>
+                </a>
               </div>
             </div>
           </div>
@@ -82,7 +90,7 @@
                 <label for="message">Message</label>
               </div>
 
-              <button type="submit" class="btn-3d">Send Message</button>
+              <button type="submit" class="send-msg-btn">Send Message</button>
             </form>
           </div>
         </div>
@@ -120,6 +128,32 @@ const submitForm = () => {
 </script>
 
 <style scoped>
+
+.contact-content-details p{
+  margin: 0 !important;
+}
+
+.send-msg-btn{
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(135deg, #EFA72E, #2c3e50);
+  color:#fff;
+  transition: transform 0.7s ease;
+  box-shadow: 0 6px 15px rgba(76,175,80,0.3);
+}
+
+.send-msg-btn:hover{
+  transform: translateY(-2px);
+  background: linear-gradient(20deg, #EFA72E, #2c3e50);
+  color:#fff;
+}
+
 /* Background */
 .contact-content {
   padding: 6rem 0;
@@ -141,10 +175,10 @@ const submitForm = () => {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15), 0 6px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s, box-shadow 0.4s;
 }
-.card-3d:hover {
+/* .card-3d:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Contact Info */
 .contact-info h2 {
@@ -163,10 +197,11 @@ const submitForm = () => {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 40px;
 }
 .contact-icon {
-  width: 55px;
+  width: 50px;
+  min-width: 50px;
   height: 55px;
   background: linear-gradient(135deg, #EFA72E, #66bb6a);
   border-radius: 12px;
@@ -193,7 +228,7 @@ const submitForm = () => {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #EFA72E, #66bb6a);
+  background: linear-gradient(135deg, #EFA72E, #2c3e50);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,7 +237,7 @@ const submitForm = () => {
 }
 .social-links a:hover {
   transform: scale(1.15) rotate(-10deg);
-  box-shadow: 0 8px 20px rgba(76,175,80,0.4);
+  box-shadow: 0 8px 20px #2c3e50;
 }
 
 /* Form Inputs */
@@ -322,7 +357,7 @@ const submitForm = () => {
   transition: background 0.3s, transform 0.3s;
 }
 .social-links a:hover {
-  background: linear-gradient(135deg, #EFA72E, #66bb6a);
+  background: linear-gradient(135deg, #EFA72E, #2c3e50);
   color: #fff;
   transform: translateY(-2px);
 }
@@ -410,10 +445,10 @@ const submitForm = () => {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s, box-shadow 0.4s;
 }
-.card-3d:hover {
+/* .card-3d:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* Contact Info */
 .contact-info h2 {
@@ -432,7 +467,7 @@ const submitForm = () => {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 30px;
 }
 .contact-icon {
   width: 50px;
@@ -445,6 +480,7 @@ const submitForm = () => {
   color: #FFFFFF;
   font-size: 1.3rem;
   transition: transform 0.3s;
+  padding: 12px;
 }
 .contact-icon:hover {
   transform: scale(1.1) rotate(10deg);
@@ -472,7 +508,7 @@ const submitForm = () => {
 .form-group textarea {
   width: 100%;
   padding: 1rem;
-  border: 2px solid #EFA72E; /* highlight border */
+  border: 1px solid #EFA72E; /* highlight border */
   border-radius: 12px;
   background: #FFFFFF;
   color: #092B47; /* Blue text */

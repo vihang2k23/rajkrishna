@@ -48,6 +48,7 @@
 .section-content{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 5rem;
 }
 </style>

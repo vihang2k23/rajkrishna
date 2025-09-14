@@ -98,6 +98,7 @@ const projects = [
 
 /* Project Card */
 .project-item {
+  cursor: pointer;
   background: #FFFFFF;
   border-radius: 18px;
   overflow: hidden;
