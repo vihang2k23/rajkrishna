@@ -12,7 +12,10 @@
       <nav class="navigation">
         <ul>
           <li v-for="item in navItems" :key="item.path">
-            <NuxtLink :to="item.path" :class="{ 'active-nav-item': isActive(item) }">
+            <NuxtLink
+              :to="item.path"
+              :class="{ 'active-nav-item': isActive(item) }"
+            >
               {{ item.label }}
             </NuxtLink>
           </li>
@@ -56,19 +59,19 @@
   </header>
 </template>
 
-
 <script setup>
 import { ref } from "vue";
-import { useRoute } from 'vue-router';
+import { useRoute } from "vue-router";
 
 const route = useRoute();
 
 const navItems = [
   { path: "/", label: "Home" },
-  { path: "/about", label: "About" },
+  { path: "/about", label: "About Us" },
   { path: "/services", label: "Services" },
   { path: "/projects", label: "Projects" },
-  { path: "/contact", label: "Contact" },
+  { path: "/solar-epc", label: "Solar EPC" },
+  { path: "/contact", label: "Contact Us" },
 ];
 
 const mobileMenuOpen = ref(false);
@@ -85,7 +88,7 @@ const isActive = (item) => {
 <style scoped>
 /* Header Wrapper */
 .header {
-  background: #FFFFFF; /* White background */
+  background: #ffffff; /* White background */
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
@@ -120,7 +123,7 @@ const isActive = (item) => {
 }
 .navigation a {
   text-decoration: none;
-  color: #092B47; /* Blue text */
+  color: #092b47; /* Blue text */
   font-weight: 500;
   font-size: 18px;
   position: relative;
@@ -128,7 +131,7 @@ const isActive = (item) => {
 }
 .navigation a:hover,
 .navigation a.active-nav-item {
-  color: #EFA72E; /* Yellow on hover */
+  color: #efa72e; /* Yellow on hover */
 }
 .navigation a::after {
   content: "";
@@ -137,7 +140,7 @@ const isActive = (item) => {
   height: 2px;
   left: 0;
   bottom: -4px;
-  background: #EFA72E; /* Yellow underline */
+  background: #efa72e; /* Yellow underline */
   transition: width 0.3s;
 }
 .navigation a:hover::after,
@@ -150,7 +153,6 @@ const isActive = (item) => {
   object-fit: contain;
 }
 
-
 /* Mobile Menu Button */
 .mobile-menu-button {
   display: none;
@@ -161,7 +163,7 @@ const isActive = (item) => {
 .mobile-menu-button span {
   width: 26px;
   height: 3px;
-  background: #092B47; /* Blue bars */
+  background: #092b47; /* Blue bars */
   margin: 4px 0;
   border-radius: 4px;
   transition: 0.4s;
@@ -179,7 +181,7 @@ const isActive = (item) => {
 
 /* Mobile Menu */
 .mobile-menu {
-  background: #FFFFFF; /* White dropdown */
+  background: #ffffff; /* White dropdown */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   padding: 1.5rem;
 }
@@ -191,13 +193,13 @@ const isActive = (item) => {
   display: block;
   padding: 0.8rem 0;
   text-decoration: none;
-  color: #092B47; /* Blue text */
+  color: #092b47; /* Blue text */
   font-weight: 500;
   border-bottom: 1px solid #eee;
   transition: color 0.3s;
 }
 .mobile-menu a:hover {
-  color: #EFA72E; /* Yellow hover */
+  color: #efa72e; /* Yellow hover */
 }
 
 /* Transition */
@@ -224,4 +226,3 @@ const isActive = (item) => {
   }
 }
 </style>
-

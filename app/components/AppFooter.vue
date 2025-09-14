@@ -27,6 +27,7 @@
             <li><NuxtLink to="/about">About</NuxtLink></li>
             <li><NuxtLink to="/services">Services</NuxtLink></li>
             <li><NuxtLink to="/projects">Projects</NuxtLink></li>
+            <li><NuxtLink to="/solar-epc">Solar EPC</NuxtLink></li>
             <li><NuxtLink to="/contact">Contact</NuxtLink></li>
           </ul>
         </div>
@@ -35,22 +36,35 @@
         <div class="footer-section">
           <h3>Services</h3>
           <ul>
-            <li><a href="#">Renewable Energy</a></li>
-            <li><a href="#">Sustainable Construction</a></li>
-            <li><a href="#">Environmental Consulting</a></li>
-            <li><a href="#">Green Technology</a></li>
-          </ul>
+            
+  <li><NuxtLink to="/services/renewable-energy">Renewable Energy</NuxtLink></li>
+  <li><NuxtLink to="/services/sustainable-construction">Sustainable Construction</NuxtLink></li>
+  <li><NuxtLink to="/services/environmental-consulting">Environmental Consulting</NuxtLink></li>
+  <li><NuxtLink to="/services/green-technology">Green Technology</NuxtLink></li>
+</ul>
+
+          
         </div>
 
         <!-- Contact -->
         <div class="footer-section">
-          <h3>Contact Us</h3>
-          <ul class="contact-info">
-            <li><Icon name="mdi:map-marker" /> 123 Green Street, Eco City</li>
-            <li><Icon name="mdi:phone" /> +1 (555) 123-4567</li>
-            <li><Icon name="mdi:email" /> info@rajkrishna.com</li>
-          </ul>
-        </div>
+  <h3>Contact Us</h3>
+  <ul class="contact-info">
+    <li>
+      <Icon name="mdi:map-marker" />
+      Ground Floor, 2 - Shivali Apartment, Near N.C.C. Ground, Law Garden, Near Rangwala Flats, Ahmedabad - 380006
+    </li>
+    <li>
+      <Icon name="mdi:phone" />
+      +91 75748 58200
+    </li>
+    <li>
+      <Icon name="mdi:email" />
+      info.rajkrishnaengineering@gmail.com
+    </li>
+  </ul>
+</div>
+
       </div>
 
       <!-- Bottom -->
@@ -66,6 +80,7 @@
 </template>
 
 <script setup>
+import { Icon } from '@iconify/vue'
 // No extra logic needed
 </script>
 
