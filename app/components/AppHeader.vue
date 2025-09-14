@@ -12,10 +12,17 @@
       <nav class="navigation">
         <ul>
           <li v-for="item in navItems" :key="item.path">
-            <NuxtLink :to="item.path" :class="{ 'active-nav-item': isActive(item) }">{{ item.label }}</NuxtLink>
+            <NuxtLink :to="item.path" :class="{ 'active-nav-item': isActive(item) }">
+              {{ item.label }}
+            </NuxtLink>
           </li>
         </ul>
       </nav>
+
+      <!-- Make in India Image (Desktop only) -->
+      <div class="make-in-india hidden md:block">
+        <img src="/makeinindia.png" alt="Make in India" />
+      </div>
 
       <!-- Mobile Menu Button -->
       <div
@@ -39,10 +46,16 @@
             </NuxtLink>
           </li>
         </ul>
+
+        <!-- Make in India Image inside Mobile Menu -->
+        <!-- <div class="mt-6 text-center">
+          <img src="/makeinindia.png" alt="Make in India" class="mx-auto w-40" />
+        </div> -->
       </div>
     </transition>
   </header>
 </template>
+
 
 <script setup>
 import { ref } from "vue";
@@ -131,6 +144,12 @@ const isActive = (item) => {
 .navigation a.nuxt-link-active::after {
   width: 100%;
 }
+/* Make in India Image */
+.make-in-india img {
+  height: 50px;
+  object-fit: contain;
+}
+
 
 /* Mobile Menu Button */
 .mobile-menu-button {
