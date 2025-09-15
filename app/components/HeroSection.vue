@@ -12,10 +12,10 @@ const carouselConfig = {
 }
 
 const slides = [
-  { image: '/hero/bg-1.png' },
-  { image: '/hero/hero-bg-1.jpg' },
-  { image: '/hero/hero-bg-2.jpg' },
-  { image: '/hero/hero-bg-3.jpg' },
+  // { image: '/hero/bg-1.png' },
+  // { image: '/hero/hero-bg-1.jpg' },
+  { image: '/hero/hero-bg-2.png' },
+  // { image: '/hero/hero-bg-3.jpg' },
   { image: '/hero/hero-bg-4.jpg' },
   { image: '/hero/hero-bg-5.jpg' },
 ]

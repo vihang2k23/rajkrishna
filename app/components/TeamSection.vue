@@ -11,13 +11,23 @@
 
       <!-- Team Grid -->
       <div class="team-grid">
-        <div v-for="(member, index) in teamMembers" :key="index" class="team-member">
+        <div
+          v-for="(member, index) in teamMembers"
+          :key="index"
+          class="team-member"
+        >
           <!-- Image with Overlay -->
           <div class="member-image">
             <img :src="member.image" :alt="member.name" />
             <div class="member-overlay">
               <div class="social-links">
-                <a v-for="(link, platform) in member.social" :key="platform" :href="link">
+                <a
+                  v-for="(link, platform) in member.social"
+                  :key="platform"
+                  :href="link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Icon :name="getSocialIcon(platform)" />
                 </a>
               </div>
@@ -38,43 +48,33 @@
 <script setup>
 const teamMembers = [
   {
-    name: 'Ashutosh Patel',
-    position: 'CEO & Founder',
-    bio: 'Environmental scientist with 15+ years of experience in sustainable development.',
-    image: '/logo.png',
-    social: { linkedin: '#', twitter: '#' }
-  },
-  {
-    name: 'Bhairav Prajapti',
-    position: 'Chief Technology Officer',
-    bio: 'Renewable energy expert specializing in solar and wind power innovations.',
-    image: '/logo.png',
-    social: { linkedin: '#', twitter: '#' }
-  },
-  {
-    name: 'Maria Rodriguez',
-    position: 'Head of Operations',
-    bio: 'Project management professional with a focus on sustainable construction.',
-    image: '/logo.png',
-    social: { linkedin: '#', twitter: '#' }
-  },
-  {
-    name: 'David Kim',
-    position: 'Lead Researcher',
-    bio: 'PhD in Environmental Engineering with numerous publications in renewable technology.',
-    image: '/logo.png',
-    social: { linkedin: '#', twitter: '#' }
+    name: "Ashutosh Patel",
+    position: "CEO & Founder",
+    bio: `Ashutosh Patel, the Founder & CEO of Rajkrishna Engineering, a company dedicated to
+creating a sustainable future through renewable energy. With a background as an Electrical
+Engineer and 15+ years of industry experience, he has worked across diverse organizations,
+gaining valuable insights into power systems, project execution, and client-focused service.
+    
+In 2021, he embarked on his entrepreneurial journey by establishing Rajkrishna Engineering,
+specializing in Solar Rooftop Projects. Over the past 3.5 years, his team has successfully
+delivered projects that not only generate clean energy but also empower clients to reduce costs
+and contribute to a greener planet.`,
+    image: "/logo.png", // replace with real photo when available
+    social: {
+      linkedin: "#",
+      twitter: "#"
+    }
   }
 ]
 
 const getSocialIcon = (platform) => {
   const icons = {
-    linkedin: 'fa6-brands:linkedin',
-    twitter: 'fa6-brands:twitter',
-    facebook: 'fa6-brands:facebook',
-    instagram: 'fa6-brands:instagram'
+    linkedin: "fa6-brands:linkedin",
+    twitter: "fa6-brands:twitter",
+    facebook: "fa6-brands:facebook",
+    instagram: "fa6-brands:instagram"
   }
-  return icons[platform] || 'mdi:link'
+  return icons[platform] || "mdi:link"
 }
 </script>
 
@@ -135,6 +135,7 @@ const getSocialIcon = (platform) => {
 .team-member {
   background: #fff;
   border-radius: 15px;
+  width: 450px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s, box-shadow 0.4s;

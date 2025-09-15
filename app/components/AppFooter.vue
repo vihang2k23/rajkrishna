@@ -45,22 +45,28 @@
           <h3>Services</h3>
           <ul>
             
-  <li><NuxtLink to="/services/renewable-energy">Renewable Energy</NuxtLink></li>
-  <li><NuxtLink to="/services/sustainable-construction">Sustainable Construction</NuxtLink></li>
-  <li><NuxtLink to="/services/environmental-consulting">Environmental Consulting</NuxtLink></li>
-  <li><NuxtLink to="/services/green-technology">Green Technology</NuxtLink></li>
+            <li v-for="service in services" :key="service.slug">
+    <NuxtLink :to="`/services/${service.slug}`">{{ service.title }}</NuxtLink>
+  </li>
 </ul>
 
           
         </div>
 
         <!-- Contact -->
-        <div class="footer-section">
+<!-- Contact -->
+<div class="footer-section">
   <h3>Contact Us</h3>
   <ul class="contact-info">
     <li>
       <Icon name="mdi:map-marker" />
-      Ground Floor, 2 - Shivali Apartment, Near N.C.C. Ground, Law Garden, Near Rangwala Flats, Ahmedabad - 380006
+      Registered Address (shifting under process) (about to close):  
+      371/47, Maniyasha Soc, Nr. Madhav Apartment, Jasodanagar Road,  
+      Maninagar East, Ahmedabad 380008.
+      <br /><br />
+      Branch Address:  
+      2, Shivali Apartment, Nr. Happy Street, B/S Rangwala Tower,  
+      Law Garden, Elisbridge, Ahmedabad 380006
     </li>
     <li>
       <Icon name="mdi:phone" />
@@ -89,6 +95,36 @@
 
 <script setup>
 import { Icon } from '@iconify/vue'
+const services = [
+  {
+    title: 'Voltage Stabilizer',
+    slug: 'voltage-stabilizer'
+  },
+  {
+    title: 'Automatic Water Sprinkler for Solar',
+    slug: 'automatic-water-sprinkler'
+  },
+  {
+    title: 'Solar Water Heater',
+    slug: 'solar-water-heater'
+  },
+  {
+    title: 'Electric Turnkey Solutions',
+    slug: 'electric-turnkey'
+  },
+  {
+    title: 'Diesel Generator',
+    slug: 'diesel-generator'
+  },
+  {
+    title: 'Transformer',
+    slug: 'transformer'
+  },
+  {
+    title: 'EV Charging Stations',
+    slug: 'ev-charging-stations'
+  }
+]
 // No extra logic needed
 </script>
 

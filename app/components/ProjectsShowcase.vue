@@ -23,9 +23,9 @@
               :alt="project.title"
               class="project-image"
             />
-            <div class="overlay">
+            <button @click="router.push('/projects')" class="overlay cursor-pointer">
               <span class="view-text">View More</span>
-            </div>
+            </button>
           </div>
           <h3 class="project-title">{{ project.title }}</h3>
           <p class="project-desc">{{ project.description }}</p>
@@ -36,6 +36,7 @@
 </template>
 
 <script setup>
+const router = useRouter()
 const projects = [
   {
     title: "Solar Farm Development",

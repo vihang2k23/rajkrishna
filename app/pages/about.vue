@@ -6,24 +6,74 @@
     <section class="about-content">
       <div class="container">
         <div class="about-grid">
+          <!-- About Text -->
           <div class="about-text">
-            <h2>Our Story</h2>
-            <p>Founded in 2015, Rajkrishna has been at the forefront of sustainable development and environmental renewal. Our journey began with a simple vision: to create a world where human progress and environmental stewardship go hand in hand.</p>
-            <p>Today, we're proud to have completed over 200 projects across multiple countries, each contributing to a more sustainable future.</p>
+            <h2>About Us</h2>
+            <p>
+              M/S Rajkrishna Engineering is a trusted name in the field of Solar EPC solutions,
+              delivering end-to-end services from design, engineering, procurement, installation
+              to commissioning and maintenance of solar power projects. With a strong commitment
+              to innovation and sustainability, we aim to empower industries, businesses, and
+              individuals with clean and reliable solar energy.
+            </p>
+            <p>
+              Backed by technical expertise and industry experience, we specialize in rooftop
+              solar, ground-mounted systems, and customized solar solutions that maximize efficiency
+              and long-term value. Our focus is not only on building projects, but also on building
+              long-lasting relationships through quality, transparency, and timely execution.
+            </p>
+            <p>
+              At Rajkrishna Engineering, we believe in harnessing the power of the sun to create a
+              greener tomorrow. Our mission is to contribute towards India’s renewable energy goals
+              by providing cost-effective and sustainable solar power solutions for residential,
+              commercial, and industrial sectors.
+            </p>
+            <p>
+              At Rajkrishna Engineering, we believe solar energy is not just a power solution,
+              but an investment in a greener future. With a commitment to innovation, quality,
+              and sustainability, we aim to create a lasting impact for our customers and the
+              environment.
+            </p>
+
+            <h2>Why Choose Us?</h2>
+            <ul>
+              <li>End-to-end Solar EPC Solutions</li>
+              <li>Expertise in Rooftop &amp; Ground-mounted Projects</li>
+              <li>Quality-driven Execution &amp; Timely Delivery</li>
+              <li>Commitment to Sustainability &amp; Clean Energy</li>
+              <li>Dedicated After-sales Service &amp; AMC Support</li>
+            </ul>
 
             <h2>Our Mission</h2>
-            <p>To provide innovative, sustainable solutions that address environmental challenges while creating economic opportunities for communities worldwide.</p>
+            <p>
+              Our mission is simple yet powerful: to drive the adoption of renewable energy by
+              combining technical expertise, quality engineering, and customer trust.
+            </p>
 
             <h2>Our Values</h2>
             <ul>
-              <li>Sustainability in all our operations</li>
-              <li>Innovation through research and development</li>
-              <li>Integrity in our relationships</li>
-              <li>Excellence in execution</li>
-              <li>Community engagement and empowerment</li>
+              <li>
+                <strong>Integrity First –</strong> We believe in honest, transparent, and ethical
+                practices in every project we undertake.
+              </li>
+              <li>
+                <strong>Customer Commitment –</strong> Our clients are at the heart of our work.
+                We deliver reliable, customized, on-time and future-ready solutions.
+              </li>
+              <li>
+                <strong>People &amp; Teamwork –</strong> Stronger together through collaboration.
+                Respect for every individual and idea.
+              </li>
+              <li>
+                <strong>Excellence in Execution –</strong> Precision, safety, and quality in every project.
+              </li>
+              <li>
+                <strong>Service –</strong> Customer service is not a department, it’s an attitude!
+              </li>
             </ul>
           </div>
 
+          <!-- About Image -->
           <div class="about-image">
             <img src="/image.png" alt="About Rajkrishna" />
           </div>
@@ -47,7 +97,7 @@ useHead({
 <style scoped>
 .about-content {
   padding: 6rem 0;
-  background: #FFFFFF; /* White background */
+  background: #FFFFFF;
 }
 
 .about-grid {
@@ -58,7 +108,7 @@ useHead({
 }
 
 .about-text h2 {
-  color: #092B47; /* Blue headings */
+  color: #092B47;
   margin: 2rem 0 1rem;
   position: relative;
   font-size: 2rem;
@@ -70,7 +120,7 @@ useHead({
   display: block;
   width: 50px;
   height: 3px;
-  background: #EFA72E; /* Yellow underline */
+  background: #EFA72E;
   margin-top: 0.5rem;
   border-radius: 2px;
 }
@@ -78,7 +128,7 @@ useHead({
 .about-text p {
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #092B47; /* Blue text */
+  color: #092B47;
   font-size: 1rem;
 }
 
@@ -92,13 +142,13 @@ useHead({
   margin-bottom: 1rem;
   padding-left: 2rem;
   position: relative;
-  color: #092B47; /* Blue list items */
+  color: #092B47;
   font-size: 1rem;
 }
 
 .about-text li::before {
   content: "✓";
-  color: #EFA72E; /* Yellow checkmark */
+  color: #EFA72E;
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -107,13 +157,13 @@ useHead({
 .about-image img {
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0 15px 40px rgba(9, 43, 71, 0.2); /* Blue shadow accent */
+  box-shadow: 0 15px 40px rgba(9, 43, 71, 0.2);
   transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .about-image img:hover {
   transform: scale(1.05);
-  box-shadow: 0 20px 50px rgba(239, 167, 46, 0.3); /* Yellow hover glow */
+  box-shadow: 0 20px 50px rgba(239, 167, 46, 0.3);
 }
 
 @media (max-width: 968px) {

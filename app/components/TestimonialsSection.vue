@@ -29,22 +29,40 @@
 <script setup>
 const testimonials = [
   {
-    name: "John Doe",
-    position: "CEO, GreenTech",
+    name: "Bhaumik Patel",
+    position: "Director, Mark Engineers",
     message:
-      "Rajkrishna provided us with excellent sustainable energy solutions that transformed our operations.",
+      "Excellent service from start to finish! The team explained everything clearly and installed my solar rooftop system on time. My electricity bills have dropped significantly, and I couldn’t be happier.",
   },
   {
-    name: "Jane Smith",
-    position: "Founder, EcoHome",
+    name: "Mr. Sanjay Patel",
+    position: "",
     message:
-      "Their team is knowledgeable, responsive, and truly cares about environmental impact.",
+      "Very professional company with great knowledge about solar energy. The installation was quick, clean, and efficient. They guided me through the subsidy process as well, which saved me extra money.",
   },
   {
-    name: "Michael Lee",
-    position: "Manager, SolarGrid",
+    name: "Mr. Amar Shah",
+    position: "Maniratna Association",
     message:
-      "We achieved our renewable energy goals thanks to their innovative and practical solutions.",
+      "Reliable, honest, and cost-effective! From consultation to installation, everything was handled smoothly. I now enjoy uninterrupted power and major savings on my monthly bills.",
+  },
+  {
+    name: "Dr. Saurin Jhaveri",
+    position: "Doctor",
+    message:
+      "Great experience! They use top-quality materials and the workmanship is excellent. I feel good knowing I’m using clean energy and saving money at the same time.",
+  },
+  {
+    name: "Mr. Chintan Maniyar",
+    position: "Director, Maniyar Builders",
+    message:
+      "The team was very friendly and knowledgeable. They completed the rooftop installation ahead of schedule and ensured everything was working perfectly. Highly recommended for anyone considering solar.",
+  },
+  {
+    name: "Mr. Arvind Jain",
+    position: "Director, Pheonix Fun Consultancy Services",
+    message:
+      "Great experience. They did excellent engineering 3D designing and installed the rooftop without hampering my elevation. My architect team was also impressed.",
   },
 ];
 </script>
@@ -116,6 +134,15 @@ const testimonials = [
 }
 .testimonial-card:nth-child(3) {
   animation-delay: 0.9s;
+}
+.testimonial-card:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.testimonial-card:nth-child(5) {
+  animation-delay: 1.5s;
+}
+.testimonial-card:nth-child(6) {
+  animation-delay: 1.8s;
 }
 
 /* Quote Icon */

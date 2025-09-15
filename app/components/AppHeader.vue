@@ -108,7 +108,7 @@ const isActive = (item) => {
 
 /* Logo */
 .logo img {
-  height: 68px;
+  height: 75px;
   transition: transform 0.3s ease;
 }
 .logo img:hover {
