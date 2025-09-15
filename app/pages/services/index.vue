@@ -10,11 +10,11 @@
 
     <ProcessSection />
 
-    <CTASection
+    <!-- <CTASection
       title="Ready to start your project?"
       buttonText="Get in Touch"
       link="/contact"
-    />
+    /> -->
   </div>
 </template>
 

@@ -1,29 +1,28 @@
 <template>
-  <section class="testimonials">
-    <div class="container">
-      <!-- Section Header -->
-      <div class="section-header">
-        <h2>What Our Clients Say</h2>
-        <p>
-          We value our clients and their feedback motivates us to keep improving.
-        </p>
-      </div>
+ <section class="testimonials">
+  <!-- Section Header -->
+  <div class="section-header">
+    <h2>What Our Clients Say</h2>
+    <p>We value our clients and their feedback motivates us to keep improving.</p>
+  </div>
 
-      <!-- Testimonials Cards -->
-      <div class="testimonials-grid">
-        <div
-          v-for="(testimonial, index) in testimonials"
-          :key="index"
-          class="testimonial-card"
-        >
-          <div class="quote-icon">“</div>
-          <p>{{ testimonial.message }}</p>
-          <h4>{{ testimonial.name }}</h4>
-          <span>{{ testimonial.position }}</span>
-        </div>
+  <!-- Full-width Marquee -->
+  <div class="marquee">
+    <div class="marquee-content">
+      <div
+        v-for="(testimonial, index) in [...testimonials, ...testimonials]"
+        :key="index"
+        class="testimonial-card"
+      >
+        <div class="quote-icon">“</div>
+        <p>{{ testimonial.message }}</p>
+        <h4>{{ testimonial.name }}</h4>
+        <span>{{ testimonial.position }}</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 </template>
 
 <script setup>
@@ -69,20 +68,20 @@ const testimonials = [
 
 <style scoped>
 .testimonials {
-  padding: 6rem 1rem;
+  padding: 4rem 1rem;
   background: linear-gradient(135deg, #f9fbfa, #f0f4f8);
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 /* Header */
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .section-header h2 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
   background: linear-gradient(90deg, #efa72e, #2e7d32);
@@ -98,68 +97,58 @@ const testimonials = [
   line-height: 1.6;
 }
 
-/* Grid Layout */
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
-  justify-content: center;
+/* Marquee */
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 2rem;
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Card */
 .testimonial-card {
+  flex: 0 0 300px;
   background: #ffffff;
   border-radius: 18px;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  position: relative;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeSlideUp 1s forwards;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .testimonial-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  transform: scale(1.05);
   background: #f9fefb;
-}
-
-.testimonial-card:nth-child(1) {
-  animation-delay: 0.3s;
-}
-.testimonial-card:nth-child(2) {
-  animation-delay: 0.6s;
-}
-.testimonial-card:nth-child(3) {
-  animation-delay: 0.9s;
-}
-.testimonial-card:nth-child(4) {
-  animation-delay: 1.2s;
-}
-.testimonial-card:nth-child(5) {
-  animation-delay: 1.5s;
-}
-.testimonial-card:nth-child(6) {
-  animation-delay: 1.8s;
+  transition: transform 0.3s ease;
 }
 
 /* Quote Icon */
 .quote-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #efa72e;
   margin-bottom: 1rem;
-  line-height: 1;
 }
 
 /* Text */
 .testimonial-card p {
   font-style: italic;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   color: #444;
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 1rem;
 }
 
@@ -167,26 +156,50 @@ const testimonials = [
   font-weight: 700;
   color: #2c3e50;
   margin-bottom: 0.2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .testimonial-card span {
   font-size: 0.9rem;
   color: #7f8c8d;
 }
+.testimonials {
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #f9fbfa, #f0f4f8);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 
-/* Animation */
-@keyframes fadeSlideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+/* Remove container constraints */
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 2rem 2rem; /* Optional: some space on left & right */
+}
+
+.marquee-content {
+  display: flex;
+  gap: 3rem; /* More space between cards */
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .section-header h2 {
-    font-size: 2.2rem;
-  }
+/* Card styling */
+.testimonial-card {
+  flex: 0 0 300px;
+  background: transparent;
+  text-align: center;
 }
+
+
 </style>

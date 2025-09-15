@@ -8,7 +8,7 @@
       <ProjectsShowcase />
       <TestimonialsSection />
       <Credential />
-      <CTASection />
+      <!-- <CTASection /> -->
     </div>
   </template>
   

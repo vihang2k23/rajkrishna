@@ -8,21 +8,31 @@
           <div class="logo">
             <img src="/logo.png" alt="Rajkrishna Logo" />
           </div>
-          <p class="tagline">
-            Sustainable renewal solutions for a better tomorrow.
-          </p>
+          <p class="tagline">Engineering Energy with Precision.</p>
           <div class="social-links">
             <a href="#" aria-label="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Remix Icon by Remix Design - https://github.com/Remix-Design/RemixIcon/blob/master/License --><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg>
+              <!-- Facebook Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
             </a>
             <a href="#" aria-label="Twitter">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+              <!-- Twitter Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
             </a>
             <a href="#" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Remix Icon by Remix Design - https://github.com/Remix-Design/RemixIcon/blob/master/License --><path fill="currentColor" d="M10.488 14.651L15.25 21h7l-7.858-10.478L20.93 3h-2.65l-5.117 5.886L8.75 3h-7l7.51 10.015L2.32 21h2.65zM16.25 19L5.75 5h2l10.5 14z"/></svg>
+              <!-- LinkedIn Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
             </a>
             <a href="#" aria-label="Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Remix Icon by Remix Design - https://github.com/Remix-Design/RemixIcon/blob/master/License --><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"/></svg>
+              <!-- Instagram Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -44,41 +54,58 @@
         <div class="footer-section">
           <h3>Services</h3>
           <ul>
-            
             <li v-for="service in services" :key="service.slug">
-    <NuxtLink :to="`/services/${service.slug}`">{{ service.title }}</NuxtLink>
-  </li>
-</ul>
-
-          
+              <NuxtLink :to="`/services/${service.slug}`">{{ service.title }}</NuxtLink>
+            </li>
+          </ul>
         </div>
 
         <!-- Contact -->
-<!-- Contact -->
-<div class="footer-section">
-  <h3>Contact Us</h3>
-  <ul class="contact-info">
-    <li>
-      <Icon name="mdi:map-marker" />
-      Registered Address (shifting under process) (about to close):  
-      371/47, Maniyasha Soc, Nr. Madhav Apartment, Jasodanagar Road,  
-      Maninagar East, Ahmedabad 380008.
-      <br /><br />
-      Branch Address:  
-      2, Shivali Apartment, Nr. Happy Street, B/S Rangwala Tower,  
-      Law Garden, Elisbridge, Ahmedabad 380006
-    </li>
-    <li>
-      <Icon name="mdi:phone" />
-      +91 75748 58200
-    </li>
-    <li>
-      <Icon name="mdi:email" />
-      info.rajkrishnaengineering@gmail.com
-    </li>
-  </ul>
-</div>
-
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul class="contact-info">
+            <li>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <!-- Address Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <p><strong>Registered Address:</strong> 371/47, Maniyasha Soc, Nr. Madhav Apartment, Jasodanagar Road, Maninagar East, Ahmedabad 380008</p>
+                  <p><strong>Branch Address:</strong> 2, Shivali Apartment, Nr. Happy Street, B/S Rangwala Tower, Law Garden, Elisbridge, Ahmedabad 380006</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <!-- Phone Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  +91 75748 58200
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <!-- Email Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  info.rajkrishnaengineering@gmail.com
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- Bottom -->
@@ -94,7 +121,6 @@
 </template>
 
 <script setup>
-import { Icon } from '@iconify/vue'
 const services = [
   {
     title: 'Voltage Stabilizer',
@@ -125,7 +151,6 @@ const services = [
     slug: 'ev-charging-stations'
   }
 ]
-// No extra logic needed
 </script>
 
 <style scoped>
@@ -134,6 +159,12 @@ const services = [
   color: #FFFFFF; /* White text */
   padding: 4rem 0 1.5rem;
   font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .footer-content {
@@ -173,7 +204,7 @@ const services = [
 
 /* Brand / About */
 .brand .logo img {
-  height: 45px;
+  height: 60px;
   margin-bottom: 1rem;
 }
 
@@ -208,17 +239,38 @@ const services = [
 }
 
 /* Contact info */
-.contact-info li {
+.contact-info {
   display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  color: #FFFFFF;
-  font-size: 0.95rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-info li {
+  margin-bottom: 1.2rem;
+}
+
+.contact-item {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.contact-details {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.contact-details p {
+  margin-bottom: 0.5rem;
 }
 
 /* Bottom bar */
 .footer-bottom {
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 1.2rem;
   display: flex;
   justify-content: space-between;
@@ -245,12 +297,27 @@ const services = [
 
 /* Responsive */
 @media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
   .footer-bottom {
     flex-direction: column;
     text-align: center;
   }
+  
   .legal-links {
     justify-content: center;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .contact-icon {
+    align-self: flex-start;
   }
 }
 </style>
