@@ -60,7 +60,7 @@
                 </div>
                 <div class="contact-content-details">
                   <h3>Phone</h3>
-                  <p>+1 (555) 123-4567</p>
+                  <p>+91 7574858200</p>
                 </div>
               </div>
 
@@ -81,7 +81,7 @@
                 </div>
                 <div class="contact-content-details">
                   <h3>Email</h3>
-                  <p>info@rajkrishna.com</p>
+                  <p>info.rajkrishnaengineering@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -216,17 +216,16 @@
     <!-- Map -->
     <div class="map card-3d">
       <iframe
-  src="https://www.google.com/maps?q=Shivali+Apartment,+Nr.+Happy+Street,+B/S+Rangwala+Tower,+Law+Garden,+Ellisbridge,+Ahmedabad+380006&hl=en&z=16&output=embed"
-  width="100%"
-  height="400"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-
-</div>
-
+        src="https://www.google.com/maps?q=Shivali+Apartment,+Nr.+Happy+Street,+B/S+Rangwala+Tower,+Law+Garden,+Ellisbridge,+Ahmedabad+380006&hl=en&z=16&output=embed"
+        width="100%"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
   </div>
 </template>
 
