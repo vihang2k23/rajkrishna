@@ -6,7 +6,7 @@
       <NuxtLink to="/" class="logo">
         <img src="/logo.png" alt="Rajkrishna Logo" />
       </NuxtLink>
-      <span class="slogan">Engineering Energy with Precision.</span>
+      <!-- <span class="slogan">Engineering Energy with Precision.</span> -->
     </div>
 
       <!-- Desktop Navigation -->
