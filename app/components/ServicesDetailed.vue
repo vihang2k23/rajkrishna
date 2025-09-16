@@ -46,7 +46,7 @@ const services = [
       'Short-Circuit Protection – Cuts off power supply immediately in case of a fault.',
       'High/Low Voltage Cutoff – Shuts down output if input voltage goes beyond safe limits.'
     ],
-    image: '/images/voltage-stabilizer.png',
+    image: '/images/image.png',
     slug: 'voltage-stabilizer'
   },
   {

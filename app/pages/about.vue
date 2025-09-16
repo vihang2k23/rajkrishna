@@ -1,88 +1,83 @@
-<!-- pages/about.vue -->
 <template>
   <div>
-    <PageHeader title="About Us" subtitle="Learn about our mission and values" />
-
+    <!-- Removed subtitle -->
+    <PageHeader title="About Us" />
     <section class="about-content">
-      <div class="container">
-        <div class="about-grid">
-          <!-- About Text -->
-          <div class="about-text">
-            <h2>About Us</h2>
-            <p>
-              M/S Rajkrishna Engineering is a trusted name in the field of Solar EPC solutions,
-              delivering end-to-end services from design, engineering, procurement, installation
-              to commissioning and maintenance of solar power projects. With a strong commitment
-              to innovation and sustainability, we aim to empower industries, businesses, and
-              individuals with clean and reliable solar energy.
-            </p>
-            <p>
-              Backed by technical expertise and industry experience, we specialize in rooftop
-              solar, ground-mounted systems, and customized solar solutions that maximize efficiency
-              and long-term value. Our focus is not only on building projects, but also on building
-              long-lasting relationships through quality, transparency, and timely execution.
-            </p>
-            <p>
-              At Rajkrishna Engineering, we believe in harnessing the power of the sun to create a
-              greener tomorrow. Our mission is to contribute towards India’s renewable energy goals
-              by providing cost-effective and sustainable solar power solutions for residential,
-              commercial, and industrial sectors.
-            </p>
-            <p>
-              At Rajkrishna Engineering, we believe solar energy is not just a power solution,
-              but an investment in a greener future. With a commitment to innovation, quality,
-              and sustainability, we aim to create a lasting impact for our customers and the
-              environment.
-            </p>
+  <div class="container">
+    <div class="about-text centered">
+      <h2>About Us</h2>
+      <p>
+        M/S Rajkrishna Engineering is a trusted name in the field of Solar EPC solutions,
+        delivering end-to-end services from design, engineering, procurement, installation
+        to commissioning and maintenance of solar power projects. With a strong commitment
+        to innovation and sustainability, we aim to empower industries, businesses, and
+        individuals with clean and reliable solar energy.
+      </p>
+      <p>
+        Backed by technical expertise and industry experience, we specialize in rooftop
+        solar, ground-mounted systems, and customized solar solutions that maximize efficiency
+        and long-term value. Our focus is not only on building projects, but also on building
+        long-lasting relationships through quality, transparency, and timely execution.
+      </p>
+      <p>
+        At Rajkrishna Engineering, we believe in harnessing the power of the sun to create a
+        greener tomorrow. Our mission is to contribute towards India’s renewable energy goals
+        by providing cost-effective and sustainable solar power solutions for residential,
+        commercial, and industrial sectors.
+      </p>
+      <p>
+        At Rajkrishna Engineering, we believe solar energy is not just a power solution,
+        but an investment in a greener future. With a commitment to innovation, quality,
+        and sustainability, we aim to create a lasting impact for our customers and the
+        environment.
+      </p>
 
-            <h2>Why Choose Us?</h2>
-            <ul>
-              <li>End-to-end Solar EPC Solutions</li>
-              <li>Expertise in Rooftop &amp; Ground-mounted Projects</li>
-              <li>Quality-driven Execution &amp; Timely Delivery</li>
-              <li>Commitment to Sustainability &amp; Clean Energy</li>
-              <li>Dedicated After-sales Service &amp; AMC Support</li>
-            </ul>
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>End-to-end Solar EPC Solutions</li>
+        <li>Expertise in Rooftop &amp; Ground-mounted Projects</li>
+        <li>Quality-driven Execution &amp; Timely Delivery</li>
+        <li>Commitment to Sustainability &amp; Clean Energy</li>
+        <li>Dedicated After-sales Service &amp; AMC Support</li>
+      </ul>
 
-            <h2>Our Mission</h2>
-            <p>
-              Our mission is simple yet powerful: to drive the adoption of renewable energy by
-              combining technical expertise, quality engineering, and customer trust.
-            </p>
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is simple yet powerful: to drive the adoption of renewable energy by
+        combining technical expertise, quality engineering, and customer trust.
+      </p>
 
-            <h2>Our Values</h2>
-            <ul>
-              <li>
-                <strong>Integrity First –</strong> We believe in honest, transparent, and ethical
-                practices in every project we undertake.
-              </li>
-              <li>
-                <strong>Customer Commitment –</strong> Our clients are at the heart of our work.
-                We deliver reliable, customized, on-time and future-ready solutions.
-              </li>
-              <li>
-                <strong>People &amp; Teamwork –</strong> Stronger together through collaboration.
-                Respect for every individual and idea.
-              </li>
-              <li>
-                <strong>Excellence in Execution –</strong> Precision, safety, and quality in every project.
-              </li>
-              <li>
-                <strong>Service –</strong> Customer service is not a department, it’s an attitude!
-              </li>
-            </ul>
-          </div>
+      <h2>Our Values</h2>
+      <ul>
+        <li>
+          <strong>Integrity First –</strong> We believe in honest, transparent, and ethical
+          practices in every project we undertake.
+        </li>
+        <li>
+          <strong>Customer Commitment –</strong> Our clients are at the heart of our work.
+          We deliver reliable, customized, on-time and future-ready solutions.
+        </li>
+        <li>
+          <strong>People &amp; Teamwork –</strong> Stronger together through collaboration.
+          Respect for every individual and idea.
+        </li>
+        <li>
+          <strong>Excellence in Execution –</strong> Precision, safety, and quality in every project.
+        </li>
+        <li>
+          <strong>Service –</strong> Customer service is not a department, it’s an attitude!
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-          <!-- About Image -->
-          <div class="about-image">
-            <img src="/image.png" alt="About Rajkrishna" />
-          </div>
-        </div>
-      </div>
-    </section>
 
+    <!-- Leadership Team with Photos -->
     <TeamSection />
+
     <StatsSection />
+
   </div>
 </template>
 
@@ -93,6 +88,7 @@ useHead({
   title: 'About Us'
 })
 </script>
+
 
 <style scoped>
 .about-content {
@@ -176,4 +172,5 @@ useHead({
     order: -1;
   }
 }
+
 </style>

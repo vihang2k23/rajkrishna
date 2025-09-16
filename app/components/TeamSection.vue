@@ -11,7 +11,7 @@
 
       <!-- Team Grid -->
       <div class="team-grid">
-        <div
+      <div
           v-for="(member, index) in teamMembers"
           :key="index"
           class="team-member"
@@ -37,7 +37,13 @@
           <div class="member-info">
             <h3>{{ member.name }}</h3>
             <p class="position">{{ member.position }}</p>
-            <p class="bio">{{ member.bio }}</p>
+
+            <!-- Bio as Bullet Points -->
+            <ul class="bio-list">
+              <li v-for="(point, i) in member.bio" :key="i">
+                {{ point }}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -50,15 +56,12 @@ const teamMembers = [
   {
     name: "Ashutosh Patel",
     position: "CEO & Founder",
-    bio: `Ashutosh Patel, the Founder & CEO of Rajkrishna Engineering, a company dedicated to
-creating a sustainable future through renewable energy. With a background as an Electrical
-Engineer and 15+ years of industry experience, he has worked across diverse organizations,
-gaining valuable insights into power systems, project execution, and client-focused service.
-    
-In 2021, he embarked on his entrepreneurial journey by establishing Rajkrishna Engineering,
-specializing in Solar Rooftop Projects. Over the past 3.5 years, his team has successfully
-delivered projects that not only generate clean energy but also empower clients to reduce costs
-and contribute to a greener planet.`,
+    bio: [
+      "Founder & CEO of Rajkrishna Engineering, dedicated to creating a sustainable future.",
+      "Electrical Engineer with 15+ years of industry experience in power systems and project execution.",
+      "Established Rajkrishna Engineering in 2021, specializing in Solar Rooftop Projects.",
+      "Successfully delivered projects that generate clean energy and help clients reduce costs."
+    ],
     image: "/logo.png", // replace with real photo when available
     social: {
       linkedin: "#",
@@ -79,6 +82,26 @@ const getSocialIcon = (platform) => {
 </script>
 
 <style scoped>
+/* keep your existing styles */
+
+/* Bio as Bullets */
+.bio-list {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  text-align: left;
+  color: #092B47;
+  opacity: 0.85;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.bio-list li {
+  margin-bottom: 0.5rem;
+}
+
+
+
+
 .team {
   position: relative;
   padding: 6rem 0;

@@ -12,12 +12,11 @@ const carouselConfig = {
 }
 
 const slides = [
-  // { image: '/hero/bg-1.png' },
-  // { image: '/hero/hero-bg-1.jpg' },
+
+  { image: '/hero/hero-bg-1.jpg' },
   { image: '/hero/hero-bg-2.png' },
-  // { image: '/hero/hero-bg-3.jpg' },
-  { image: '/hero/hero-bg-4.jpg' },
-  { image: '/hero/hero-bg-5.jpg' },
+  { image: '/hero/hero-bg-3.png' },
+
 ]
 
 </script>
@@ -41,18 +40,17 @@ const slides = [
 
 <style scoped>
 .hero {
-  /* background-image: url('../assets/images/hero-bg-1.jfif');
-  background-size: cover;
-  background-position: center;
-  padding: 100px 0; */
-  height: calc(100vh - 100px);
+  height: calc(100vh - 100px); /* full height minus navbar */
+  position: relative;
+  overflow: hidden;
 }
 
 .hero .carousel-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* keeps aspect ratio while filling */
+  object-position: center; /* centers image */
+  border-radius: 0; /* remove if any corner rounding happens */
 }
-
 
 </style>

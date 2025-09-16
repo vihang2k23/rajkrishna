@@ -28,18 +28,21 @@
     { name: "Brand 4", image: "/brands/Polycab.png" },
     { name: "Brand 5", image: "/brands/Waaree-logo.png" },
     { name: "Brand 6", image: "/brands/sofar-logo.jpg" },
+    { name: "Brand 7", image: "/brands/vguard.jpg" },
     { name: "Brand 1", image: "/brands/abb-logo.png" },
     { name: "Brand 2", image: "/brands/adani-logo.svg" },
     { name: "Brand 3", image: "/brands/havells-logo-2.png" },
     { name: "Brand 4", image: "/brands/Polycab.png" },
     { name: "Brand 5", image: "/brands/Waaree-logo.png" },
     { name: "Brand 6", image: "/brands/sofar-logo.jpg" },
+    { name: "Brand 7", image: "/brands/vguard.jpg" },
     { name: "Brand 1", image: "/brands/abb-logo.png" },
     { name: "Brand 2", image: "/brands/adani-logo.svg" },
     { name: "Brand 3", image: "/brands/havells-logo-2.png" },
     { name: "Brand 4", image: "/brands/Polycab.png" },
     { name: "Brand 5", image: "/brands/Waaree-logo.png" },
     { name: "Brand 6", image: "/brands/sofar-logo.jpg" },
+    { name: "Brand 7", image: "/brands/vguard.jpg" },
   ];
   </script>
   

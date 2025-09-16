@@ -10,7 +10,7 @@
         </p>
       </div>
 
-      <!-- Projects Grid / Slider -->
+      <!-- Projects Grid -->
       <div class="projects-slider">
         <div
           v-for="(project, index) in projects"
@@ -28,7 +28,6 @@
             </button>
           </div>
           <h3 class="project-title">{{ project.title }}</h3>
-          <p class="project-desc">{{ project.description }}</p>
         </div>
       </div>
     </div>
@@ -39,22 +38,24 @@
 const router = useRouter()
 const projects = [
   {
-    title: "Solar Farm Development",
-    description:
-      "A large-scale solar farm providing clean energy to over 5000 homes.",
-    image: "/image.png",
+    title: "80kW Corporate Building",
+    image: "/projects/80kw Corporate Building (1).jpg",
   },
   {
-    title: "Eco-Friendly Housing",
-    description:
-      "Sustainable residential buildings with energy-efficient designs.",
-    image: "/image.png",
+    title: "300kW Project Plastic Industries",
+    image: "/projects/300kw Project Plastic Industries.jpeg",
   },
   {
-    title: "Community Wind Project",
-    description:
-      "A community-based wind energy initiative supporting local power needs.",
-    image: "/image.png",
+    title: "Common Society 10kW",
+    image: "/projects/Common Society 10kw.jpg",
+  },
+  {
+    title: "Solar Ground Mounted 1MW",
+    image: "/projects/Solar-ground mounted 1mw.webp",
+  },
+  {
+    title: "Textile Industries 180kW",
+    image: "/projects/Textile Industries 180kW.jpg",
   },
 ];
 </script>
@@ -163,19 +164,12 @@ const projects = [
   border-radius: 8px;
 }
 
-/* Title & Description */
+/* Title */
 .project-title {
   font-size: 1.4rem;
   font-weight: 600;
   color: #092B47;
   margin-bottom: 0.5rem;
-}
-
-.project-desc {
-  font-size: 1rem;
-  color: #333333;
-  line-height: 1.6;
-  padding: 0 0.5rem;
 }
 
 /* Responsive */
@@ -185,4 +179,3 @@ const projects = [
   }
 }
 </style>
-

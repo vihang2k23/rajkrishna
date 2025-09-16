@@ -73,9 +73,16 @@
                   </svg>
                 </div>
                 <div class="contact-details">
-                  <p><strong>Registered Address:</strong> 371/47, Maniyasha Soc, Nr. Madhav Apartment, Jasodanagar Road, Maninagar East, Ahmedabad 380008</p>
-                  <p><strong>Branch Address:</strong> 2, Shivali Apartment, Nr. Happy Street, B/S Rangwala Tower, Law Garden, Elisbridge, Ahmedabad 380006</p>
-                </div>
+  <p>
+    <strong>Registered Office:</strong><br />
+    371/47, Maniyasha Soc, Nr. Madhav Apartment, Jasodanagar Road, Maninagar East, Ahmedabad 380008
+  </p>
+  <p>
+    <strong>Branch Office:</strong><br />
+    2, Shivali Apartment, Nr. Happy Street, B/S Rangwala Tower, Law Garden, Elisbridge, Ahmedabad 380006
+  </p>
+</div>
+
               </div>
             </li>
             <li>
@@ -204,12 +211,14 @@ const services = [
 
 /* Brand / About */
 .brand .logo img {
-  height: 60px;
+  height: 100px; /* bigger logo */
   margin-bottom: 1rem;
 }
 
+
 .tagline {
-  color: #FFFFFF;
+  color: #EFA72E;
+  font-weight: bolder;
   font-size: 0.95rem;
   margin-bottom: 1.2rem;
   line-height: 1.5;

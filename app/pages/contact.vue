@@ -1,7 +1,7 @@
 <!-- pages/contact.vue -->
 <template>
   <div>
-    <PageHeader title="Contact Us" subtitle="Get in touch with our team" />
+    <PageHeader title="Contact Us" subtitle="Get in touch with our expert team" />
 
     <section class="contact-content">
       <div class="container">
@@ -31,16 +31,21 @@
                   </svg>
                 </div>
                 <div class="contact-content-details">
-                  <h3>Address</h3>
-                  <p>
-                    Registered Address (shifting under process) (about to
-                    close)<br />
-                    Reg. Address: - 371/47, Maniyasha Soc, Nr. Madhav Apartment.
-                    Jasodanagar Road, Maninagar East, Ahmedabad 380008.<br /><br />
-                    Branch Address: - 2, Shivali Apartment, Nr. Happy Street,
-                    B/S Rangwala Tower, Law Garden, Elisbridge, Ahmedabad 380006
-                  </p>
-                </div>
+
+  <div class="contact-details">
+    <p>
+      <strong>Registered Office:</strong><br />
+      371/47, Maniyasha Soc, Nr. Madhav Apartment, Jasodanagar Road, 
+      Maninagar East, Ahmedabad 380008
+    </p>
+    <p>
+      <strong>Branch Office:</strong><br />
+      2, Shivali Apartment, Nr. Happy Street, B/S Rangwala Tower, 
+      Law Garden, Elisbridge, Ahmedabad 380006
+    </p>
+  </div>
+</div>
+
               </div>
 
               <div class="contact-item">

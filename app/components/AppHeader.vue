@@ -255,5 +255,20 @@ const isActive = (item) => {
     font-size: 0.9rem;
   }
 }
+/* Rajkrishna Logo */
+.logo img {
+  height: 100px; /* increased size */
+  transition: transform 0.3s ease;
+}
+.logo img:hover {
+  transform: scale(1.08);
+}
+
+/* Make in India Image */
+.make-in-india img {
+  height: 80px; /* increased size */
+  object-fit: contain;
+}
+
 
 </style>

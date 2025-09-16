@@ -51,4 +51,15 @@
     flex-wrap: wrap;
     gap: 5rem;
 }
+.credential-img {
+  width: 150px;   /* increased size */
+  aspect-ratio: 1 / 1;  /* keeps logos square */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.credential-img:hover {
+  transform: scale(1.1); /* smooth zoom effect on hover */
+}
+
 </style>
