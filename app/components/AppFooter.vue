@@ -210,8 +210,8 @@ const services = [
 
 <style scoped>
 .footer {
-  background: linear-gradient(135deg, #092B47 0%, #EFA72E 100%); /* Same as header */
-  color: #FFFFFF; /* White text */
+  background: linear-gradient(135deg, #0A2E4B 0%, #EFA72E 90%);
+  color: #FFFFFF;
   padding: 4rem 0 1.5rem;
   font-family: "Inter", sans-serif;
 }
