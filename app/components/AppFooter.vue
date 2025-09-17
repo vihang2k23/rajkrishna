@@ -140,7 +140,7 @@
     </li>
 
     <!-- Email -->
-    <li>
+    <li >
       <div class="contact-item">
         <div class="contact-icon">
           <!-- Email Icon -->
@@ -234,7 +234,7 @@ const services = [
   margin-bottom: 1.2rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #EFA72E; /* Yellow */
+  color: #EFA72E;
 }
 
 /* Lists */
@@ -248,21 +248,20 @@ const services = [
 }
 
 .footer-section a {
-  color: #FFFFFF; /* White links */
+  color: #FFFFFF;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-  color: #EFA72E; /* Yellow on hover */
+  color: #EFA72E;
 }
 
 /* Brand / About */
 .brand .logo img {
-  height: 100px; /* bigger logo */
+  height: 100px;
   margin-bottom: 1rem;
 }
-
 
 .tagline {
   color: #EFA72E;
@@ -274,6 +273,7 @@ const services = [
 
 .social-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.8rem;
 }
 
@@ -283,14 +283,14 @@ const services = [
   justify-content: center;
   width: 42px;
   height: 42px;
-  background: #FFFFFF; /* White circles */
+  background: #FFFFFF;
   border-radius: 50%;
   transition: all 0.3s ease;
-  color: #092B47; /* Blue icons */
+  color: #092B47;
 }
 
 .social-links a:hover {
-  background: #EFA72E; /* Yellow on hover */
+  background: #EFA72E;
   color: #FFFFFF;
   transform: translateY(-3px);
 }
@@ -300,10 +300,6 @@ const services = [
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.contact-info li {
-  margin-bottom: 0.1rem;
 }
 
 .contact-item {
@@ -352,29 +348,108 @@ const services = [
   color: #EFA72E;
 }
 
-/* Responsive */
+/* ✅ Responsive */
+@media (max-width: 1024px) {
+  .footer-section h3 {
+    font-size: 1.1rem;
+  }
+  .footer-section a {
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
+  .brand {
+    text-align: center;
+  }
+
+  .brand .logo img {
+    height: 80px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .legal-links {
     justify-content: center;
   }
-  
+
   .contact-item {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .contact-icon {
     align-self: flex-start;
   }
 }
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 3rem 0 1rem;
+  }
+
+  .footer-section h3 {
+    font-size: 1rem;
+  }
+
+  .footer-section a,
+  .contact-details {
+    font-size: 0.85rem;
+  }
+
+  .legal-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+/* ✅ Contact item fix */
+.contact-item {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: nowrap; /* prevent breaking */
+  align-items: flex-start;
+}
+
+.contact-details a {
+  white-space: nowrap; /* keeps phone & email in one line */
+  overflow: hidden;
+  text-overflow: ellipsis; /* avoids overflow on tiny screens */
+}
+
+/* ✅ Mobile view */
+@media (max-width: 768px) {
+  .contact-item {
+    flex-direction: row; /* keep icon + text inline */
+    align-items: center;
+  }
+
+  .contact-details {
+    font-size: 0.85rem;
+  }
+}
+.contact-details a {
+  white-space: normal; /* allow wrapping for addresses */
+  word-break: break-word; /* wrap long words/addresses */
+}
+
+/* ✅ Special case: phone + email stay inline */
+.contact-item a[href^="tel"],
+.contact-item a[href^="mailto"] {
+  white-space: nowrap;  /* never break phone/email */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 </style>
