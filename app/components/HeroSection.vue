@@ -13,8 +13,8 @@ const carouselConfig = {
 
 const slides = [
 
-  { image: '/hero/hero-bg-1.jpg' },
-  { image: '/hero/hero-bg-2.png' },
+  { image: '/hero/hero-bg-1.png' },
+  { image: '/hero/hero-bg-2.jpg' },
   { image: '/hero/hero-bg-3.png' },
 
 ]
@@ -51,6 +51,20 @@ const slides = [
   object-fit: cover; /* keeps aspect ratio while filling */
   object-position: center; /* centers image */
   border-radius: 0; /* remove if any corner rounding happens */
+}
+.hero {
+  height: 100vh; /* full viewport height */
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff; /* white background to fill empty space */
+}
+
+.hero .carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ensures the whole image fits without cropping */
+  object-position: center; /* center the image */
+  display: block;
 }
 
 </style>

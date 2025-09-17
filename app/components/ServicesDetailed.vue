@@ -18,16 +18,19 @@
             </li>
           </ul>
           <NuxtLink :to="`/services/${service.slug}`" class="btn btn-primary">
-            Learn More
-          </NuxtLink>
+  More
+</NuxtLink>
         </div>
 
         <!-- Image with decorative element -->
         <div class="service-image-wrapper">
-          <div class="service-image-outer">
-            <img :src="service.image" :alt="service.title" />
-            <div class="decorative-shape"></div>
-          </div>
+          <div 
+  class="service-image-outer"
+  :class="{ 'full-image': service.slug === 'voltage-stabilizer' }"
+>
+  <img :src="service.image" :alt="service.title" />
+  <div class="decorative-shape"></div>
+</div>
         </div>
       </div>
     </div>
@@ -46,7 +49,7 @@ const services = [
       'Short-Circuit Protection – Cuts off power supply immediately in case of a fault.',
       'High/Low Voltage Cutoff – Shuts down output if input voltage goes beyond safe limits.'
     ],
-    image: '/images/image.png',
+    image: '/images/Services.png',
     slug: 'voltage-stabilizer'
   },
   {
@@ -170,4 +173,25 @@ const services = [
 
 .service-image-outer:hover img {
   transform: scale(1.1);
-}</style>
+}
+/* default (for others) */
+.service-image-outer {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s;
+  max-width: 500px;
+  max-height: 350px;
+  margin: auto;
+}
+
+/* full size for voltage stabilizer */
+.service-image-outer.full-image {
+  max-width: none;
+  max-height: none;
+  width: 60%;
+  height: auto;
+}
+
+</style>

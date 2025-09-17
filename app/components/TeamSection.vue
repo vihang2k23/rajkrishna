@@ -64,7 +64,7 @@ const teamMembers = [
     ],
     image: "/logo.png", // replace with real photo when available
     social: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/ashutosh-patel-21560464/",
       twitter: "#"
     }
   }
@@ -150,9 +150,11 @@ const getSocialIcon = (platform) => {
 /* Team Grid */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
   gap: 2.5rem;
+  justify-content: center; /* centers items */
 }
+
 
 /* Team Member Card */
 .team-member {

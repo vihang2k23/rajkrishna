@@ -1,99 +1,90 @@
 <!-- pages/contact.vue -->
 <template>
   <div>
-    <PageHeader title="Contact Us" subtitle="Get in touch with our expert team" />
+    <PageHeader title="Contact Us" subtitle="Got Questions? We’ve Got Sun-Powered Answers." />
 
     <section class="contact-content">
-      <div class="container">
-        <div class="contact-grid">
-          <!-- Contact Info -->
-          <div class="contact-info card-3d">
-            <h2>Get In Touch</h2>
-            <p>
-              We'd love to hear from you. Fill out the form or use the contact
-              info below.
-            </p>
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div class="contact-info card-3d">
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you. Fill out the form or use the contact info below.</p>
 
-            <div class="contact-details">
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                  >
-                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
-                    <path
-                      fill="currentColor"
-                      d="M12 19.35q3.05-2.8 4.525-5.087T18 10.2q0-2.725-1.737-4.462T12 4T7.738 5.738T6 10.2q0 1.775 1.475 4.063T12 19.35m0 1.975q-.35 0-.7-.125t-.625-.375Q9.05 19.325 7.8 17.9t-2.087-2.762t-1.275-2.575T4 10.2q0-3.75 2.413-5.975T12 2t5.588 2.225T20 10.2q0 1.125-.437 2.363t-1.275 2.575T16.2 17.9t-2.875 2.925q-.275.25-.625.375t-.7.125M12 12q.825 0 1.413-.587T14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12"
-                    />
-                  </svg>
-                </div>
-                <div class="contact-content-details">
+        <ul class="contact-details space-y-4">
 
-  <div class="contact-details">
-    <p>
-      <strong>Registered Office:</strong><br />
-      371/47, Maniyasha Soc, Nr. Madhav Apartment, Jasodanagar Road, 
-      Maninagar East, Ahmedabad 380008
-    </p>
-    <p>
-      <strong>Branch Office:</strong><br />
-      2, Shivali Apartment, Nr. Happy Street, B/S Rangwala Tower, 
-      Law Garden, Elisbridge, Ahmedabad 380006
-    </p>
-  </div>
-</div>
-
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                  >
-                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
-                    <path
-                      fill="currentColor"
-                      d="M18.825 20.975q-3.3 0-6.337-1.163q-3.038-1.162-5.375-3.225q-2.338-2.062-3.725-4.875Q2 8.9 2 5.6q0-1.1.612-1.85Q3.225 3 4.35 3h2.325q.675 0 1.05.387q.375.388.525 1.113q.15.75.338 1.55q.187.8.437 1.425q.225.525.138.987q-.088.463-.513.888l-1.95 1.9q1.2 1.75 3.338 3.387q2.137 1.638 4.162 2.238l1.15-2.325q.225-.45.575-.612q.35-.163.975-.113q.65.05 1.288.05q.637 0 1.437-.05q.75-.05 1.263.4q.512.45.687 1.45l.4 2.25l.05.425q0 1.05-.862 1.838q-.863.787-2.338.787Z"
-                    />
-                  </svg>
-                </div>
-                <div class="contact-content-details">
-                  <h3>Phone</h3>
-                  <p>+91 7574858200</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                  >
-                    <!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE -->
-                    <path
-                      fill="currentColor"
-                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 14H4V8l8 5l8-5zm-8-7L4 6h16z"
-                    />
-                  </svg>
-                </div>
-                <div class="contact-content-details">
-                  <h3>Email</h3>
-                  <p>info.rajkrishnaengineering@gmail.com</p>
-                </div>
-              </div>
+          <!-- Registered + Branch Offices -->
+          <li class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
+              </svg>
             </div>
+            <div class="contact-content-details space-y-2">
+              <p>
+                <strong>Registered Office:</strong><br />
+                <a href="https://www.google.com/maps?q=371/47,+Maniyasha+Soc,+Nr.+Madhav+Apartment,+Jasodanagar+Road,+Maninagar+East,+Ahmedabad+380008,+Gujarat,+India" 
+                   target="_blank" rel="noopener noreferrer" class="hover:text-[#EFA72E] transition">
+                  371/47, Maniyasha Soc, Nr. Madhav Apartment, Jasodanagar Road,<br />
+                  Maninagar East, Ahmedabad 380008, Gujarat, India
+                </a>
+              </p>
+              <p>
+                <strong>Branch Office:</strong><br />
+                <a href="https://www.google.com/maps?q=2,+Shivali+Apartment,+Nr.+Happy+Street,+B/S+Rangwala+Tower,+Law+Garden,+Elisbridge,+Ahmedabad+380006,+Gujarat,+India" 
+                   target="_blank" rel="noopener noreferrer" class="hover:text-[#EFA72E] transition">
+                  2, Shivali Apartment, Nr. Happy Street, B/S Rangwala Tower,<br />
+                  Law Garden, Elisbridge, Ahmedabad 380006, Gujarat, India
+                </a>
+              </p>
+            </div>
+          </li>
 
-            <div class="social-section">
-              <h3>Follow Us</h3>
-              <div class="social-links">
+          <!-- Phone 1 -->
+          <li class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <div class="contact-content-details">
+              <h3>Phone</h3>
+              <p><a href="tel:+917574858200" class="hover:text-[#EFA72E] transition">+91 75748 58200</a></p>
+            </div>
+          </li>
+
+          <!-- Phone 2 -->
+          <li class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zm0-10v2h14V7H7z"/>
+              </svg>
+            </div>
+            <div class="contact-content-details">
+              <h3>Office</h3>
+              <p><a href="tel:+919510594387" class="hover:text-[#EFA72E] transition">+91 95105 94387</a></p>
+            </div>
+          </li>
+
+          <!-- Email -->
+          <li class="contact-item">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </div>
+            <div class="contact-content-details">
+              <h3>Email</h3>
+              <p><a href="mailto:info.rajkrishnaengineering@gmail.com" class="hover:text-[#EFA72E] transition">info.rajkrishnaengineering@gmail.com</a></p>
+            </div>
+          </li>
+
+        </ul>
+
+        <!-- Social Links -->
+        <div class="social-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
                 <a href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +127,7 @@
                     />
                   </svg>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/ashutosh-patel-21560464/" >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -151,72 +142,45 @@
                   </svg>
                 </a>
               </div>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="contact-form card-3d">
-            <form @submit.prevent="submitForm">
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="name"
-                  v-model="formData.name"
-                  required
-                  placeholder=" "
-                />
-                <label for="name">Full Name</label>
-              </div>
-
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="email"
-                  v-model="formData.email"
-                  required
-                  placeholder=" "
-                />
-                <label for="email">Email Address</label>
-              </div>
-
-              <div class="form-group">
-                <input
-                  type="tel"
-                  id="phone"
-                  v-model="formData.phone"
-                  placeholder=" "
-                />
-                <label for="phone">Phone Number</label>
-              </div>
-
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="subject"
-                  v-model="formData.subject"
-                  required
-                  placeholder=" "
-                />
-                <label for="subject">Subject</label>
-              </div>
-
-              <div class="form-group">
-                <textarea
-                  id="message"
-                  v-model="formData.message"
-                  rows="5"
-                  required
-                  placeholder=" "
-                ></textarea>
-                <label for="message">Message</label>
-              </div>
-
-              <button type="submit" class="send-msg-btn">Send Message</button>
-            </form>
-          </div>
         </div>
       </div>
-    </section>
+
+      <!-- Contact Form -->
+      <div class="contact-form card-3d">
+        <form @submit.prevent="submitForm">
+          <div class="form-group">
+            <input type="text" id="name" v-model="formData.name" required placeholder=" " />
+            <label for="name">Full Name</label>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" v-model="formData.email" required placeholder=" " />
+            <label for="email">Email Address</label>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" id="phone" v-model="formData.phone" placeholder=" " />
+            <label for="phone">Phone Number</label>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="subject" v-model="formData.subject" required placeholder=" " />
+            <label for="subject">Subject</label>
+          </div>
+
+          <div class="form-group">
+            <textarea id="message" v-model="formData.message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Message</label>
+          </div>
+
+          <button type="submit" class="send-msg-btn">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Map -->
     <div class="map card-3d">
@@ -232,6 +196,18 @@
       </iframe>
     </div>
   </div>
+  <a
+      href="https://wa.me/919510594387?text=Hello%20I%20am%20interested%20in%20your%20services"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 flex items-center justify-center"
+    >
+      <img
+        src="/whatsapp-icon.png"
+        alt="WhatsApp"
+        class="w-16 h-16"
+      />
+    </a>
 </template>
 
 <script setup>

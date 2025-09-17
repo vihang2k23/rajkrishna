@@ -10,10 +10,11 @@
         <div class="details-grid">
           <!-- Image with floating shape -->
           <div class="details-image-wrapper">
-            <div class="details-image-outer">
-              <img :src="service.image" :alt="service.title" />
-              <div class="floating-shape"></div>
-            </div>
+            <div class="details-image-outer" :class="{ 'full-image': service.slug === 'voltage-stabilizer' }">
+  <img :src="service.image" :alt="service.title" />
+  <div class="floating-shape"></div>
+</div>
+
           </div>
 
           <!-- Content -->
@@ -41,15 +42,31 @@
       </div>
     </section>
   </div>
+  <!-- Floating WhatsApp Button -->
+  <a
+      href="https://wa.me/919510594387?text=Hello%20I%20am%20interested%20in%20your%20services"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 flex items-center justify-center"
+    >
+      <img
+        src="/whatsapp-icon.png"
+        alt="WhatsApp"
+        class="w-16 h-16"
+      />
+    </a>
 </template>
 
 <script setup>
-import { useRoute } from "vue-router";
-import { computed } from "vue";
+
+
+import { useRoute } from 'vue-router'
+
+
 
 const allServices = [
   {
-    slug: "voltage-stabilizer",
+     slug: 'voltage-stabilizer',
     title: "Voltage Stabilizer",
     description:
       "Reliable stabilization solutions for consistent voltage supply.",
@@ -60,7 +77,7 @@ const allServices = [
       "Short-Circuit Protection – Cuts off power supply immediately in case of a fault.",
       "High/Low Voltage Cutoff – Shuts down output if input voltage goes beyond safe limits.",
     ],
-    image: "/images/image.png",
+    image: "/images/Services.png",
   },
   {
     slug: "automatic-water-sprinkler",
@@ -156,8 +173,9 @@ const allServices = [
 
 const route = useRoute();
 const service = computed(
-  () => allServices.find((s) => s.slug === route.params.slug) || allServices[0]
+  () => allServices.find((s) => s.slug === route.params.id) || allServices[0]
 );
+
 </script>
 <style scoped>
 .service-details {
@@ -331,4 +349,12 @@ const service = computed(
 .service-image-outer:hover img {
   transform: scale(1.1);
 }
+/* Special case for Voltage Stabilizer */
+.full-image {
+  max-width: 60% !important;
+  max-height: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
 </style>

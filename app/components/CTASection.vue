@@ -1,41 +1,59 @@
 <template>
   <section class="cta">
     <div class="container">
-      <h2>Ready to Transform Your Energy Approach?</h2>
-      <p>Partner with us today to achieve sustainable solutions that make a difference.</p>
-      <NuxtLink to="/contact" class="btn btn-primary btn-lg">Get Started</NuxtLink>
+      <h2>Do You Need a Consultation?</h2>
+      <p>
+        Green Line can give you lots of advantages, from which you will surely
+        benefit.
+      </p>
+      <button router.push="/contact" class="btn cursor-pointer btn-primary btn-lg">
+        Contact Us</button
+      >
     </div>
   </section>
 </template>
 
 <script setup>
+const router = useRouter();
 </script>
 
 <style scoped>
 .cta {
   padding: 5rem 0;
   text-align: center;
-  background: linear-gradient(90deg, #092B47, #EFA72E); /* Blue → Yellow gradient */
-  color: #FFFFFF; /* White text */
+  background: linear-gradient(
+    90deg,
+    #092b47,
+    #efa72e
+  ); /* Blue → Yellow gradient */
+  color: #ffffff; /* White text */
   position: relative;
   overflow: hidden;
 }
 
 /* Glow animation */
 .cta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 0%,
+    transparent 70%
+  );
   animation: rotateGlow 6s linear infinite;
 }
 
 @keyframes rotateGlow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Headings */
@@ -56,16 +74,16 @@
 }
 
 .btn-primary {
-  background: #FFFFFF; /* White button */
-  color: #092B47; /* Blue text */
+  background: #ffffff; /* White button */
+  color: #092b47; /* Blue text */
   font-weight: 600;
   border-radius: 8px;
   transition: transform 0.3s, box-shadow 0.3s, color 0.3s, background 0.3s;
 }
 
 .btn-primary:hover {
-  background: #EFA72E; /* Yellow hover */
-  color: #FFFFFF; /* White text */
+  background: #efa72e; /* Yellow hover */
+  color: #ffffff; /* White text */
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(239, 167, 46, 0.6);
 }

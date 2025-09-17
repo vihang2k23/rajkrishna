@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader title="Our Projects" subtitle="Explore our completed sustainable initiatives" />
+    <PageHeader title="Our Projects" subtitle="Engineering Energy with Precision." />
 
     <section class="projects-content">
       <div class="container">
@@ -15,39 +15,78 @@
               <img :src="project.image" :alt="project.title" />
             </div>
             <div class="project-details">
-              <h2>{{ project.title }}</h2>
-            </div>
+  <h2>{{ project.title }}</h2>
+  <p>⚡ {{ project.capacity }}</p>
+  <p>🏢 {{ project.type }}</p>
+  <p>📊 {{ project.units }}</p>
+  <p>🗓️ {{ project.year }}</p>
+</div>
+
           </div>
         </div>
       </div>
     </section>
   </div>
+   <!-- Floating WhatsApp Button -->
+   <a
+      href="https://wa.me/919510594387?text=Hello%20I%20am%20interested%20in%20your%20services"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 flex items-center justify-center"
+    >
+      <img
+        src="/whatsapp-icon.png"
+        alt="WhatsApp"
+        class="w-16 h-16"
+      />
+    </a>
 </template>
 
 <script setup>
 const projects = [
   {
-    title: "80kW Corporate Building",
+    title: "Corporate Building – 80kW, Ahmedabad",
     image: "/projects/80kw Corporate Building (1).jpg",
+    capacity: "80 kW",
+    type: "Corporate Building",
+    units: "1,16,800 units/Year",
+    year: 2022,
   },
   {
-    title: "300kW Project Plastic Industries",
+    title: "Industrial – 300kW, Gujarat",
     image: "/projects/300kw Project Plastic Industries.jpeg",
+    capacity: "300 kW",
+    type: "Plastic Industries",
+    units: "4,38,000 units/Year",
+    year: 2021,
   },
   {
-    title: "Common Society 10kW",
+    title: "Residential Rooftop – 10kW, Ahmedabad",
     image: "/projects/Common Society 10kw.jpg",
+    capacity: "10 kW",
+    type: "Common Society Project",
+    units: "14,600 units/Year",
+    year: 2024,
   },
   {
-    title: "Solar Ground Mounted 1MW",
+    title: "Ground Mounted – 1MW, Gujarat",
     image: "/projects/Solar-ground mounted 1mw.webp",
+    capacity: "1 MW",
+    type: "Ground Mounted Project",
+    units: "14,60,000 units/Year",
+    year: 2021,
   },
   {
-    title: "Textile Industries 180kW",
+    title: "Industrial – 180kW, Ahmedabad",
     image: "/projects/Textile Industries 180kW.jpg",
+    capacity: "180 kW",
+    type: "Textile Industries",
+    units: "2,62,800 units/Year",
+    year: 2023,
   },
 ];
 </script>
+
 
 <style scoped>
 .projects-content {
@@ -103,4 +142,13 @@ const projects = [
   font-size: 2rem;
   color: #092b47;
 }
+.project-details p {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 </style>

@@ -27,7 +27,14 @@
               <span class="view-text">View More</span>
             </button>
           </div>
-          <h3 class="project-title">{{ project.title }}</h3>
+
+          <div class="project-details">
+            <h2>{{ project.title }}</h2>
+            <p>⚡ {{ project.capacity }}</p>
+            <p>🏢 {{ project.type }}</p>
+            <p>📊 {{ project.units }}</p>
+            <p>🗓️ {{ project.year }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -36,26 +43,47 @@
 
 <script setup>
 const router = useRouter()
+
 const projects = [
   {
-    title: "80kW Corporate Building",
+    title: "Corporate Building – 80kW, Ahmedabad",
     image: "/projects/80kw Corporate Building (1).jpg",
+    capacity: "80 kW",
+    type: "Corporate Building",
+    units: "1,16,800 units/Year",
+    year: 2022,
   },
   {
-    title: "300kW Project Plastic Industries",
+    title: "Industrial – 300kW, Gujarat",
     image: "/projects/300kw Project Plastic Industries.jpeg",
+    capacity: "300 kW",
+    type: "Plastic Industries",
+    units: "4,38,000 units/Year",
+    year: 2021,
   },
   {
-    title: "Common Society 10kW",
+    title: "Residential Rooftop – 10kW, Ahmedabad",
     image: "/projects/Common Society 10kw.jpg",
+    capacity: "10 kW",
+    type: "Common Society Project",
+    units: "14,600 units/Year",
+    year: 2024,
   },
   {
-    title: "Solar Ground Mounted 1MW",
+    title: "Ground Mounted – 1MW, Gujarat",
     image: "/projects/Solar-ground mounted 1mw.webp",
+    capacity: "1 MW",
+    type: "Ground Mounted Project",
+    units: "14,60,000 units/Year",
+    year: 2021,
   },
   {
-    title: "Textile Industries 180kW",
+    title: "Industrial – 180kW, Ahmedabad",
     image: "/projects/Textile Industries 180kW.jpg",
+    capacity: "180 kW",
+    type: "Textile Industries",
+    units: "2,62,800 units/Year",
+    year: 2023,
   },
 ];
 </script>
@@ -164,12 +192,23 @@ const projects = [
   border-radius: 8px;
 }
 
-/* Title */
-.project-title {
+/* Project Details */
+.project-details {
+  text-align: left;
+  padding: 0 0.5rem;
+}
+
+.project-details h2 {
   font-size: 1.4rem;
   font-weight: 600;
   color: #092B47;
   margin-bottom: 0.5rem;
+}
+
+.project-details p {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  color: #092B47;
 }
 
 /* Responsive */

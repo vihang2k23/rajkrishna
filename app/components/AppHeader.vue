@@ -3,11 +3,11 @@
     <div class="container">
       <!-- Logo -->
       <div class="logo-slogan">
-      <NuxtLink to="/" class="logo">
-        <img src="/logo.png" alt="Rajkrishna Logo" />
-      </NuxtLink>
-      <!-- <span class="slogan">Engineering Energy with Precision.</span> -->
-    </div>
+  <NuxtLink to="/" class="logo">
+    <img src="/logo.png" alt="Rajkrishna Logo" />
+  </NuxtLink>
+  <span class="slogan">Engineering Energy with Precision.</span>
+</div>
 
       <!-- Desktop Navigation -->
       <nav class="navigation">
@@ -226,19 +226,23 @@ const isActive = (item) => {
     display: flex;
   }
 }
+
 /* Logo + Slogan wrapper */
 .logo-slogan {
   display: flex;
-  align-items: center;
-  gap: 1rem; /* space between logo and slogan */
+  flex-direction: column; /* Stack vertically */
+  align-items: center;    /* Center slogan under logo */
+  text-align: center;
 }
 
 .slogan {
+  margin-top: 0.5rem; /* spacing between logo and slogan */
   font-size: 1rem;
-  color: #2e7d32; /* green color, can change */
+  color: #efa72e; /* green color */
   font-weight: 500;
   font-style: italic;
 }
+
 
 /* Adjust logo size */
 .logo img {
