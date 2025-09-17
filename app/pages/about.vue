@@ -108,11 +108,26 @@ useHead({
   background: #FFFFFF;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+}
+
+.about-text {
+  text-align: left;
+}
+
+.about-text.centered {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .about-text h2 {
@@ -162,6 +177,7 @@ useHead({
   font-weight: bold;
 }
 
+/* Image */
 .about-image img {
   width: 100%;
   border-radius: 15px;
@@ -174,15 +190,47 @@ useHead({
   box-shadow: 0 20px 50px rgba(239, 167, 46, 0.3);
 }
 
-@media (max-width: 968px) {
+/* ✅ Responsive */
+@media (max-width: 1024px) {
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
   }
 
-  .about-image {
-    order: -1;
+  .about-text.centered {
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
   }
 }
 
+@media (max-width: 600px) {
+  .about-content {
+    padding: 3rem 1rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-text p,
+  .about-text li {
+    font-size: 0.9rem;
+  }
+
+  .about-text li {
+    padding-left: 1.5rem;
+  }
+
+  .about-text li::before {
+    font-size: 0.9rem;
+  }
+}
 </style>
+

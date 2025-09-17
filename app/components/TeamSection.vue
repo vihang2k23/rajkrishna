@@ -82,26 +82,6 @@ const getSocialIcon = (platform) => {
 </script>
 
 <style scoped>
-/* keep your existing styles */
-
-/* Bio as Bullets */
-.bio-list {
-  list-style-type: disc;
-  padding-left: 1.2rem;
-  text-align: left;
-  color: #092B47;
-  opacity: 0.85;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-.bio-list li {
-  margin-bottom: 0.5rem;
-}
-
-
-
-
 .team {
   position: relative;
   padding: 6rem 0;
@@ -131,7 +111,7 @@ const getSocialIcon = (platform) => {
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -150,17 +130,17 @@ const getSocialIcon = (platform) => {
 /* Team Grid */
 .team-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
-  justify-content: center; /* centers items */
+  justify-content: center;
 }
-
 
 /* Team Member Card */
 .team-member {
   background: #fff;
   border-radius: 15px;
-  width: 450px;
+  max-width: 450px;
+  margin: auto;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s, box-shadow 0.4s;
@@ -174,7 +154,7 @@ const getSocialIcon = (platform) => {
 /* Member Image */
 .member-image {
   position: relative;
-  height: 300px;
+  height: 280px;
   overflow: hidden;
 }
 
@@ -211,8 +191,8 @@ const getSocialIcon = (platform) => {
 }
 
 .social-links a {
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   background: #fff;
   border-radius: 50%;
   display: flex;
@@ -234,14 +214,14 @@ const getSocialIcon = (platform) => {
 
 /* Member Info */
 .member-info {
-  padding: 2rem 1.5rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
 .member-info h3 {
   margin-bottom: 0.5rem;
   color: #092B47;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .position {
@@ -250,10 +230,35 @@ const getSocialIcon = (platform) => {
   margin-bottom: 1rem;
 }
 
-.bio {
+/* Bio as Bullets */
+.bio-list {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  text-align: left;
   color: #092B47;
-  opacity: 0.75;
+  opacity: 0.85;
   line-height: 1.6;
   font-size: 0.95rem;
 }
+
+.bio-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  .team {
+    padding: 4rem 1rem;
+  }
+  .member-image {
+    height: 220px;
+  }
+  .bio-list {
+    font-size: 0.9rem;
+  }
+}
 </style>
+

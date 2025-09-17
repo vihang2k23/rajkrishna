@@ -164,5 +164,139 @@
     left: 0;
     font-weight: bold;
   }
+  .projects-content {
+  padding: 6rem 0;
+  background: #FFFFFF;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 4rem;
+}
+
+/* Project Card Base */
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  background: #FFFFFF;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.project-card.reverse {
+  direction: rtl;
+}
+
+.project-card.reverse > * {
+  direction: ltr;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 0;
+  transition: transform 0.5s;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-details {
+  padding: 2rem;
+}
+
+.project-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #092B47;
+}
+
+.project-details p {
+  color: #092B47;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-details ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.project-details li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #092B47;
+}
+
+.project-details li:before {
+  content: '•';
+  color: #EFA72E;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* ✅ Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .project-card {
+    grid-template-columns: 1fr; /* Stack image + details */
+    text-align: center;
+  }
+
+  .project-card.reverse {
+    direction: ltr; /* Disable RTL trick on smaller screens */
+  }
+
+  .project-details {
+    padding: 1.5rem;
+  }
+
+  .project-details h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-content {
+    padding: 3rem 1rem;
+  }
+
+  .project-details h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-details p {
+    font-size: 0.95rem;
+  }
+
+  .project-details li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-details {
+    padding: 1rem;
+  }
+
+  .project-details h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-details p {
+    font-size: 0.9rem;
+  }
+}
+
   </style>
   

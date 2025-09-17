@@ -150,5 +150,128 @@ const projects = [
   align-items: center;
   gap: 0.5rem;
 }
+.projects-content {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 4rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-card.reverse {
+  direction: rtl;
+}
+
+.project-card.reverse > * {
+  direction: ltr;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 0;
+  transition: transform 0.5s;
+  object-fit: cover;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-details {
+  padding: 2rem;
+}
+
+.project-details h2 {
+  font-size: 2rem;
+  color: #092b47;
+}
+.project-details p {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  /* Tablets */
+  .project-card {
+    grid-template-columns: 1fr; /* stack image & details */
+    gap: 1.5rem;
+  }
+
+  .project-details {
+    padding: 1.5rem;
+  }
+
+  .project-details h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-details p {
+    font-size: 0.95rem;
+  }
+
+  .project-card.reverse {
+    direction: ltr; /* fix layout when stacked */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile */
+  .projects-content {
+    padding: 3rem 1rem;
+  }
+
+  .projects-grid {
+    gap: 2rem;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr; 
+    border-radius: 12px;
+  }
+
+  .project-details {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .project-details h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-details p {
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+
+  /* WhatsApp button smaller on mobile */
+  a.fixed img {
+    width: 50px;
+    height: 50px;
+  }
+}
 
 </style>

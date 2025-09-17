@@ -193,5 +193,177 @@ const services = [
   width: 60%;
   height: auto;
 }
+.services-detailed {
+  padding: 6rem 0;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Service Item Layout */
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 6rem;
+}
+.service-item.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Service Content */
+.service-content {
+  flex: 1;
+}
+.service-content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #092B47, #EFA72E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.service-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #092B47;
+  margin-bottom: 1.5rem;
+}
+
+/* Features */
+.service-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+.feature-item {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #092B47;
+}
+.feature-item::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #EFA72E;
+  font-weight: bold;
+}
+
+/* Service Image */
+.service-image-wrapper {
+  flex: 1;
+}
+.service-image-outer {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s;
+  max-width: 500px;
+  max-height: 350px;
+  margin: auto;
+}
+.service-image-outer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  transition: transform 0.5s;
+}
+.service-image-outer:hover {
+  transform: scale(1.05);
+}
+.service-image-outer:hover img {
+  transform: scale(1.1);
+}
+
+/* full size for voltage stabilizer */
+.service-image-outer.full-image {
+  max-width: none;
+  max-height: none;
+  width: 60%;
+  height: auto;
+}
+
+/* Button */
+.btn-primary {
+  display: inline-block;
+  background: linear-gradient(90deg, #092B47, #EFA72E);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(9, 43, 71, 0.25);
+}
+
+/* ✅ Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .service-content h2 {
+    font-size: 2rem;
+  }
+  .service-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .service-item {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .service-item.reverse {
+    flex-direction: column;
+  }
+
+  .service-image-outer {
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .service-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-detailed {
+    padding: 4rem 1rem;
+  }
+  .service-content h2 {
+    font-size: 1.6rem;
+  }
+  .service-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .feature-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-content h2 {
+    font-size: 1.4rem;
+  }
+  .btn-primary {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+  }
+  .service-image-outer.full-image {
+    width: 100%; /* full-width for small screens */
+  }
+}
 
 </style>
