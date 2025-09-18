@@ -21,7 +21,7 @@ useHead({
     { name: 'description', content: 'Rajkrishna - Sustainable renewal solutions' }
   ],
   link: [
-    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    { rel: 'icon', type: 'image/x-icon', href: '/logo.png' }
   ]
 })
 </script>
