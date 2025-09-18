@@ -34,9 +34,12 @@
               </li>
             </ul>
 
-            <NuxtLink to="/services" class="btn btn-secondary">
+            <div class="flex flex-wrap gap-3"><NuxtLink to="/services" class="btn btn-secondary">
               Back to Services
             </NuxtLink>
+            <NuxtLink to="/contact" class="btn btn-primary">
+      Contact Us
+    </NuxtLink></div>
           </div>
         </div>
       </div>
@@ -355,6 +358,45 @@ const service = computed(
   max-height: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+}.details-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* keeps responsive */
 }
+
+/* Secondary button (already exists) */
+.btn-secondary {
+  background: #092b47;
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+.btn-secondary:hover {
+  background: #efa72e;
+  color: #092b47;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(9, 43, 71, 0.3);
+}
+
+/* Primary button (new) */
+.btn-primary {
+  background: #efa72e;
+  color: #092b47;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+.btn-primary:hover {
+  background: #092b47;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(239, 167, 46, 0.3);
+}
+
 
 </style>

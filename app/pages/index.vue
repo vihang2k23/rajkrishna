@@ -1,6 +1,7 @@
 <!-- pages/index.vue -->
 <template>
   <div>
+
     <HeroSection />
     <FeaturesSection />
     <CTASection/>

@@ -217,4 +217,41 @@ const projects = [
     font-size: 2.2rem;
   }
 }
+/* Image with Overlay */
+.image-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  height: 200px; /* Fix image box height */
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps image inside box neatly */
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Subtle impose effect */
+.project-item:hover .project-image {
+  transform: scale(1.05); /* smaller zoom */
+  filter: brightness(0.9); /* slight darken for emphasis */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 43, 71, 0.35); /* softer overlay */
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 1;
+}
+
 </style>

@@ -1,20 +1,24 @@
 <template>
   <section class="cta">
     <div class="container">
+
       <h2>Do You Need a Consultation?</h2>
       <p>
         Green Line can give you lots of advantages, from which you will surely
         benefit.
       </p>
-      <button router.push="/contact" class="btn cursor-pointer btn-primary btn-lg">
-        Contact Us</button
-      >
+      <!-- Use NuxtLink only -->
+      <NuxtLink 
+        to="/contact" 
+        class="btn cursor-pointer btn-primary btn-lg">
+        Contact Us
+      </NuxtLink>
     </div>
   </section>
 </template>
 
 <script setup>
-const router = useRouter();
+// ❌ Not needed when using NuxtLink
 </script>
 
 <style scoped>
@@ -39,13 +43,11 @@ const router = useRouter();
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.15) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
   animation: rotateGlow 6s linear infinite;
+  pointer-events: none; /* ✅ important fix */
 }
+
 
 @keyframes rotateGlow {
   0% {

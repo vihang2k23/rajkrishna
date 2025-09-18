@@ -62,7 +62,7 @@ const teamMembers = [
       "Established Rajkrishna Engineering in 2021, specializing in Solar Rooftop Projects.",
       "Successfully delivered projects that generate clean energy and help clients reduce costs."
     ],
-    image: "/logo.png", // replace with real photo when available
+    image: "/person.png", // replace with real photo when available
     social: {
       linkedin: "https://www.linkedin.com/in/ashutosh-patel-21560464/",
       twitter: "#"
