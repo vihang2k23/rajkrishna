@@ -32,13 +32,9 @@
       href="https://wa.me/919510594387?text=Hello%20I%20am%20interested%20in%20your%20services"
       target="_blank"
       rel="noopener noreferrer"
-      class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 flex items-center justify-center"
+      class="whatsapp-float"
     >
-      <img
-        src="/whatsapp-icon.png"
-        alt="WhatsApp"
-        class="w-16 h-16"
-      />
+      <img src="/whatsapp-icon.png" alt="WhatsApp" />
     </a>
   </template>
   
@@ -246,6 +242,47 @@
   font-weight: bold;
 }
 
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9; /* light bg so images don’t look stuck */
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 500px;   /* prevents over-stretching on large screens */
+  height: auto;
+  object-fit: contain; /* keep proportions without cropping */
+  border-radius: 12px;
+  transition: transform 0.5s;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  background: #128C7E;
+}
+
+.whatsapp-float img {
+  width: 2rem;
+  height: 2rem;
+}
 /* ✅ Responsive Breakpoints */
 @media (max-width: 1024px) {
   .project-card {
@@ -282,6 +319,16 @@
   .project-details li {
     font-size: 0.9rem;
   }
+  .whatsapp-float {
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.75rem;
+  }
+  
+  .whatsapp-float img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -296,7 +343,23 @@
   .project-details p {
     font-size: 0.9rem;
   }
+}@media (max-width: 1024px) {
+  .project-image {
+    padding: 0.5rem;
+  }
+
+  .project-image img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
 }
+
+@media (max-width: 480px) {
+  .project-image img {
+    border-radius: 8px;
+  }
+}
+
 
   </style>
   

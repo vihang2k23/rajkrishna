@@ -8,7 +8,8 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  ssr: true,
+  ssr: false,
+  target: 'static', 
 
   app: {
     head: {
@@ -39,12 +40,12 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: 'https://www.rajkrishna.com'
+      siteUrl: 'https://rkepc.in/'
     }
   },
 
   image: {
-    domains: ['www.rajkrishna.com'],
+    domains: ['https://rkepc.in/'],
     presets: {
       cover: {
         modifiers: {

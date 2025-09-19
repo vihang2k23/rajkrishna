@@ -50,13 +50,9 @@
       href="https://wa.me/919510594387?text=Hello%20I%20am%20interested%20in%20your%20services"
       target="_blank"
       rel="noopener noreferrer"
-      class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 flex items-center justify-center"
+      class="whatsapp-float"
     >
-      <img
-        src="/whatsapp-icon.png"
-        alt="WhatsApp"
-        class="w-16 h-16"
-      />
+      <img src="/whatsapp-icon.png" alt="WhatsApp" />
     </a>
 </template>
 
@@ -397,6 +393,29 @@ const service = computed(
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(239, 167, 46, 0.3);
 }
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
 
+.whatsapp-float:hover {
+  background: #128C7E;
+}
+
+.whatsapp-float img {
+  width: 2rem;
+  height: 2rem;
+}
 
 </style>
