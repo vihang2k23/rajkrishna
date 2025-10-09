@@ -11,7 +11,7 @@
 
       <!-- Team Grid -->
       <div class="team-grid">
-      <div
+        <div
           v-for="(member, index) in teamMembers"
           :key="index"
           class="team-member"
@@ -38,12 +38,8 @@
             <h3>{{ member.name }}</h3>
             <p class="position">{{ member.position }}</p>
 
-            <!-- Bio as Bullet Points -->
-            <ul class="bio-list">
-              <li v-for="(point, i) in member.bio" :key="i">
-                {{ point }}
-              </li>
-            </ul>
+            <!-- Full Bio Paragraph -->
+            <p class="bio-paragraph">{{ member.bio }}</p>
           </div>
         </div>
       </div>
@@ -56,12 +52,15 @@ const teamMembers = [
   {
     name: "Ashutosh Patel",
     position: "CEO & Founder",
-    bio: [
-      "Founder & CEO of Rajkrishna Engineering, dedicated to creating a sustainable future.",
-      "Electrical Engineer with 15+ years of industry experience in power systems and project execution.",
-      "Established Rajkrishna Engineering in 2021, specializing in Solar Rooftop Projects.",
-      "Successfully delivered projects that generate clean energy and help clients reduce costs."
-    ],
+    bio: `Ashutosh Patel, the Founder & CEO of Rajkrishna Engineering, a company dedicated to
+creating a sustainable future through renewable energy. With a background as an Electrical
+Engineer and 15+ years of industry experience, I have had the privilege of working
+across diverse organizations, gaining valuable insights into power systems, project
+execution, and client-focused service.
+In 2021, I embarked on my entrepreneurial journey by establishing Rajkrishna
+Engineering, specializing in Solar Rooftop Projects. Over the past 3.5 years, my team and I
+have successfully delivered projects that not only generate clean energy but also empower
+clients to reduce costs and contribute to a greener planet.`,
     image: "/person.png", // replace with real photo when available
     social: {
       linkedin: "https://www.linkedin.com/in/ashutosh-patel-21560464/",
@@ -80,6 +79,8 @@ const getSocialIcon = (platform) => {
   return icons[platform] || "mdi:link"
 }
 </script>
+
+
 
 <style scoped>
 .team {
@@ -257,6 +258,21 @@ const getSocialIcon = (platform) => {
     height: 220px;
   }
   .bio-list {
+    font-size: 0.9rem;
+  }
+}
+.bio-paragraph {
+  text-align: left;
+  color: #092B47;
+  opacity: 0.85;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .bio-paragraph {
     font-size: 0.9rem;
   }
 }

@@ -8,6 +8,17 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'Rajkrishna - Engineering Energy with Precision',
+      meta: [
+        { name: 'description', content: 'Rajkrishna provides comprehensive Solar EPC solutions. Harness solar power efficiently for homes and businesses.' },
+        // You can add other global meta tags here, like 'keywords'
+      ],
+    }
+  },
   ssr: false,
   target: 'static', 
 

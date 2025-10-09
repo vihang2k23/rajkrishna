@@ -182,7 +182,7 @@ const formData = reactive({
 
 const submitForm = async () => {
   try {
-    const res = await fetch("https://formspree.io/f/myzdrkqq", {
+    const res = await fetch("https://formspree.io/f/meorjzpq", {
       method: "POST",
       headers: {
         Accept: "application/json",

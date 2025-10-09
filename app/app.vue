@@ -5,9 +5,33 @@
   </NuxtLayout>
 </template>
 
-<script setup >
+<script setup>
 import { useHead } from 'nuxt/app';
-// Main app entry point
+
+// Smooth scrolling for anchor links
+const handleSmoothScroll = (e) => {
+  const link = e.target.closest('a[href^="#"]');
+  if (link) {
+    e.preventDefault();
+    const href = link.getAttribute('href');
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+};
+
+// Add event listener when the component is mounted
+onMounted(() => {
+  document.addEventListener('click', handleSmoothScroll);
+});
+
+// Clean up event listener
+onUnmounted(() => {
+  document.removeEventListener('click', handleSmoothScroll);
+});
+
+// Your existing useHead code below...
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk ? `${titleChunk} - Rajkrishna` : 'Rajkrishna';

@@ -201,5 +201,37 @@ const testimonials = [
   text-align: center;
 }
 
+/* Marquee */
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 
+.marquee-content {
+  display: flex;
+  gap: 2rem;
+  width: max-content; /* Key change: width is as wide as its content */
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-70%); /* Key change: move by the full width of the FIRST set of duplicated content */
+  }
+}
+
+/* Card - Consider making width flexible or using a different layout approach */
+.testimonial-card {
+  flex: 0 0 auto; /* Change from fixed pixel width */
+  width: 300px; /* You can keep a desired width, but now it's flexible for calculation */
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
 </style>

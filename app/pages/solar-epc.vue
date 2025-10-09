@@ -131,8 +131,10 @@
     transform: scale(1.05);
   }
   .project-details {
-    padding: 2rem;
-  }
+  padding: 2rem;
+  text-align: left; /* Ensures content stays left-aligned */
+}
+
   .project-details h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -144,15 +146,18 @@
     line-height: 1.6;
   }
   .project-details ul {
-    list-style: none;
-    margin-bottom: 1.5rem;
-  }
-  .project-details li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.8rem;
-    color: #092B47;
-  }
+  list-style: none;
+  margin-bottom: 1.5rem;
+  padding-left: 0; /* Remove default padding */
+}
+
+.project-details li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #092B47;
+  text-align: left; /* Explicitly set text alignment */
+}
   .project-details li:before {
     content: '•';
     color: #EFA72E;
@@ -359,7 +364,21 @@
     border-radius: 8px;
   }
 }
+@media (max-width: 1024px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    text-align: left; /* Change from 'center' to 'left' */
+  }
 
+  .project-card.reverse {
+    direction: ltr;
+  }
+
+  .project-details {
+    padding: 1.5rem;
+    text-align: left; /* Ensure details stay left-aligned */
+  }
+}
 
   </style>
   
