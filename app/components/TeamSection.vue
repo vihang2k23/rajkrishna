@@ -18,7 +18,14 @@
         >
           <!-- Image with Overlay -->
           <div class="member-image">
-            <img :src="member.image" :alt="member.name" />
+            <!-- <img :src="member.image" :alt="member.name" /> -->
+            <NuxtImg
+  :src="member.image"
+  format="webp"
+
+  loading="lazy"
+:alt="member.name"
+/>
             <div class="member-overlay">
               <div class="social-links">
                 <a

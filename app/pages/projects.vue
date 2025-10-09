@@ -12,7 +12,14 @@
             :class="{ reverse: index % 2 !== 0 }"
           >
             <div class="project-image">
-              <img :src="project.image" :alt="project.title" />
+              <!-- <img  /> -->
+              <NuxtImg
+:src="project.image" :alt="project.title"
+  format="webp"
+ 
+  loading="lazy"
+  
+/>
             </div>
             <div class="project-details">
   <h2>{{ project.title }}</h2>
@@ -34,7 +41,13 @@
       rel="noopener noreferrer"
       class="whatsapp-float"
     >
-      <img src="/whatsapp-icon.png" alt="WhatsApp" />
+    <NuxtImg
+ src="/whatsapp-icon.png"
+  format="webp"
+
+  loading="lazy"
+  alt="WhatsApp"
+/>
     </a>
 </template>
 
