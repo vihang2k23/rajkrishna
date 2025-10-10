@@ -19,7 +19,7 @@
           <!-- Image with Overlay -->
           <div class="member-image">
             <!-- <img :src="member.image" :alt="member.name" /> -->
-            <NuxtImg
+            <img
   :src="member.image"
   format="webp"
 

@@ -23,7 +23,7 @@
       rel="noopener noreferrer"
       class="whatsapp-float"
     >
-    <NuxtImg
+    <img
  src="/whatsapp-icon.png"
   format="webp"
   

@@ -85,7 +85,7 @@
       class="whatsapp-float"
     >
       <!-- <img  alt="WhatsApp" /> -->
-      <NuxtImg
+      <img
  src="/whatsapp-icon.png"
   format="webp"
  

@@ -13,7 +13,7 @@
           >
             <div class="project-image">
               <!-- <img  /> -->
-              <NuxtImg
+              <img
 :src="project.image" :alt="project.title"
   format="webp"
  
@@ -41,7 +41,7 @@
       rel="noopener noreferrer"
       class="whatsapp-float"
     >
-    <NuxtImg
+    <img
  src="/whatsapp-icon.png"
   format="webp"
 
