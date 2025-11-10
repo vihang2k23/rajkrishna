@@ -1,7 +1,10 @@
 <!-- pages/contact.vue -->
 <template>
   <div>
-    <PageHeader title="Contact Us" subtitle="Got Questions? We’ve Got Sun-Powered Answers." />
+    <PageHeader
+      title="Contact Us"
+      subtitle="Got Questions? We’ve Got Sun-Powered Answers."
+    />
 
     <section class="contact-content">
       <div class="container">
@@ -9,30 +12,50 @@
           <!-- Contact Info -->
           <div class="contact-info card-3d">
             <h2>Get In Touch</h2>
-            <p>We'd love to hear from you. Fill out the form or use the contact info below.</p>
+            <p>
+              We'd love to hear from you. Fill out the form or use the contact
+              info below.
+            </p>
 
             <ul class="contact-details">
               <!-- Registered + Branch Offices -->
               <li class="contact-item">
                 <div class="contact-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
+                    />
                   </svg>
                 </div>
                 <div class="contact-content-details">
                   <p>
                     <strong>Registered Office:</strong><br />
-                    <a href="https://www.google.com/maps?q=371/47,+Maniyasha+Soc,+Nr.+Madhav+Apartment,+Jasodanagar+Road,+Maninagar+East,+Ahmedabad+380008,+Gujarat,+India" 
-                       target="_blank" rel="noopener noreferrer" class="hover-text">
-                      371/47, Maniyasha Soc, Nr. Madhav Apartment, Jasodanagar Road,<br />
-                      Maninagar East, Ahmedabad 380008, Gujarat, India
+                    <a
+                      href="https://www.google.com/maps?q=GF/02,+Shivali+Apartment,+OPP+RANGWALA+TOWER,+Ellis+Bridge,+Ahmedabad+380006,+Gujarat,+India"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover-text"
+                    >
+                      GF/02, Shivali Apartment, OPP RANGWALA TOWER,<br />
+                      Ellis Bridge, Ahmedabad 380006, Gujarat, India
                     </a>
                   </p>
                   <p>
                     <strong>Branch Office:</strong><br />
-                    <a href="https://www.google.com/maps?q=2,+Shivali+Apartment,+Nr.+Happy+Street,+B/S+Rangwala+Tower,+Law+Garden,+Elisbridge,+Ahmedabad+380006,+Gujarat,+India" 
-                       target="_blank" rel="noopener noreferrer" class="hover-text">
-                      2, Shivali Apartment, Nr. Happy Street, B/S Rangwala Tower,<br />
+                    <a
+                      href="https://www.google.com/maps?q=2,+Shivali+Apartment,+Nr.+Happy+Street,+B/S+Rangwala+Tower,+Law+Garden,+Elisbridge,+Ahmedabad+380006,+Gujarat,+India"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="hover-text"
+                    >
+                      2, Shivali Apartment, Nr. Happy Street, B/S Rangwala
+                      Tower,<br />
                       Law Garden, Elisbridge, Ahmedabad 380006, Gujarat, India
                     </a>
                   </p>
@@ -42,39 +65,77 @@
               <!-- Phone 1 -->
               <li class="contact-item">
                 <div class="contact-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
                   </svg>
                 </div>
                 <div class="contact-content-details">
                   <h3>Phone</h3>
-                  <p><a href="tel:+917574858200" class="hover-text">+91 75748 58200</a></p>
+                  <p>
+                    <a href="tel:+917574858200" class="hover-text"
+                      >+91 75748 58200</a
+                    >
+                  </p>
                 </div>
               </li>
 
               <!-- Phone 2 -->
               <li class="contact-item">
                 <div class="contact-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zm0-10v2h14V7H7z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zm0-10v2h14V7H7z"
+                    />
                   </svg>
                 </div>
                 <div class="contact-content-details">
                   <h3>Office</h3>
-                  <p><a href="tel:+919510594387" class="hover-text">+91 95105 94387</a></p>
+                  <p>
+                    <a href="tel:+919510594387" class="hover-text"
+                      >+91 95105 94387</a
+                    >
+                  </p>
                 </div>
               </li>
 
               <!-- Email -->
               <li class="contact-item">
                 <div class="contact-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
                   </svg>
                 </div>
                 <div class="contact-content-details">
                   <h3>Email</h3>
-                  <p><a href="mailto:info.rajkrishnaengineering@gmail.com" class="hover-text">info.rajkrishnaengineering@gmail.com</a></p>
+                  <p>
+                    <a
+                      href="mailto:info.rajkrishnaengineering@gmail.com"
+                      class="hover-text"
+                      >info.rajkrishnaengineering@gmail.com</a
+                    >
+                  </p>
                 </div>
               </li>
             </ul>
@@ -84,23 +145,55 @@
               <h3>Follow Us</h3>
               <div class="social-links">
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"
+                    />
                   </svg>
                 </a>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+                    />
                   </svg>
                 </a>
                 <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M10.488 14.651L15.25 21h7l-7.858-10.478L20.93 3h-2.65l-5.117 5.886L8.75 3h-7l7.51 10.015L2.32 21h2.65zM16.25 19L5.75 5h2l10.5 14z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M10.488 14.651L15.25 21h7l-7.858-10.478L20.93 3h-2.65l-5.117 5.886L8.75 3h-7l7.51 10.015L2.32 21h2.65zM16.25 19L5.75 5h2l10.5 14z"
+                    />
                   </svg>
                 </a>
                 <a href="https://www.linkedin.com/in/ashutosh-patel-21560464/">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"/>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"
+                    />
                   </svg>
                 </a>
               </div>
@@ -111,27 +204,56 @@
           <div class="contact-form card-3d">
             <form @submit.prevent="submitForm">
               <div class="form-group">
-                <input type="text" id="name" v-model="formData.name" required placeholder=" " />
+                <input
+                  type="text"
+                  id="name"
+                  v-model="formData.name"
+                  required
+                  placeholder=" "
+                />
                 <label for="name">Full Name</label>
               </div>
 
               <div class="form-group">
-                <input type="email" id="email" v-model="formData.email" required placeholder=" " />
+                <input
+                  type="email"
+                  id="email"
+                  v-model="formData.email"
+                  required
+                  placeholder=" "
+                />
                 <label for="email">Email Address</label>
               </div>
 
               <div class="form-group">
-                <input type="tel" id="phone" v-model="formData.phone" placeholder=" " />
+                <input
+                  type="tel"
+                  id="phone"
+                  v-model="formData.phone"
+                  placeholder=" "
+                />
                 <label for="phone">Phone Number</label>
               </div>
 
               <div class="form-group">
-                <input type="text" id="subject" v-model="formData.subject" required placeholder=" " />
+                <input
+                  type="text"
+                  id="subject"
+                  v-model="formData.subject"
+                  required
+                  placeholder=" "
+                />
                 <label for="subject">Subject</label>
               </div>
 
               <div class="form-group">
-                <textarea id="message" v-model="formData.message" rows="5" required placeholder=" "></textarea>
+                <textarea
+                  id="message"
+                  v-model="formData.message"
+                  rows="5"
+                  required
+                  placeholder=" "
+                ></textarea>
                 <label for="message">Message</label>
               </div>
 
@@ -161,13 +283,12 @@
       rel="noopener noreferrer"
       class="whatsapp-float"
     >
-    <img
- src="/whatsapp-icon.png"
-  format="webp"
-
-  loading="lazy"
-  alt="WhatsApp"
-/>
+      <img
+        src="/whatsapp-icon.png"
+        format="webp"
+        loading="lazy"
+        alt="WhatsApp"
+      />
     </a>
   </div>
 </template>
@@ -310,7 +431,7 @@ const submitForm = async () => {
 }
 
 .hover-text:hover {
-  color: #EFA72E !important;
+  color: #efa72e !important;
 }
 
 .social-section {
@@ -430,7 +551,7 @@ const submitForm = async () => {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
-  background: #25D366;
+  background: #25d366;
   color: white;
   border-radius: 50%;
   padding: 0.5rem;
@@ -443,7 +564,7 @@ const submitForm = async () => {
 }
 
 .whatsapp-float:hover {
-  background: #128C7E;
+  background: #128c7e;
 }
 
 .whatsapp-float img {
@@ -456,56 +577,56 @@ const submitForm = async () => {
   .container {
     padding: 0 2rem;
   }
-  
+
   .contact-content {
     padding: 5rem 0;
   }
-  
+
   .contact-grid {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
-  
+
   .card-3d {
     padding: 2rem;
   }
-  
+
   .contact-info h2 {
     font-size: 2rem;
   }
-  
+
   .contact-icon {
     width: 50px;
     min-width: 50px;
     height: 50px;
     font-size: 1.3rem;
   }
-  
+
   .social-links a {
     width: 45px;
     height: 45px;
   }
-  
+
   .social-links svg {
     width: 24px;
     height: 24px;
   }
-  
+
   .send-msg-btn {
     width: auto;
   }
-  
+
   .map {
     margin: 3rem auto;
     width: calc(100% - 4rem);
   }
-  
+
   .whatsapp-float {
     bottom: 2rem;
     right: 2rem;
     padding: 0.75rem;
   }
-  
+
   .whatsapp-float img {
     width: 2.5rem;
     height: 2.5rem;
@@ -517,24 +638,24 @@ const submitForm = async () => {
   .contact-content {
     padding: 6rem 0;
   }
-  
+
   .contact-grid {
     gap: 4rem;
   }
-  
+
   .contact-info h2 {
     font-size: 2.25rem;
   }
-  
+
   .contact-item {
     margin-bottom: 2rem;
   }
-  
+
   .send-msg-btn {
     padding: 0.9rem 2.2rem;
     font-size: 1.1rem;
   }
-  
+
   .map {
     margin: 4rem auto;
     height: 450px;
@@ -546,11 +667,11 @@ const submitForm = async () => {
   .container {
     max-width: 1200px;
   }
-  
+
   .contact-grid {
     gap: 5rem;
   }
-  
+
   .map {
     height: 500px;
   }
@@ -564,17 +685,17 @@ const submitForm = async () => {
     height: 36px;
     padding: 6px;
   }
-  
+
   .social-links a {
     width: 36px;
     height: 36px;
   }
-  
+
   .social-links svg {
     width: 18px;
     height: 18px;
   }
-  
+
   .form-group input,
   .form-group textarea {
     padding: 0.75rem;
