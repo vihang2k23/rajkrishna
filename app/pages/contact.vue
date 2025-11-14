@@ -34,32 +34,20 @@
                   </svg>
                 </div>
                 <div class="contact-content-details">
-                  <p>
-                    <strong>Registered Office:</strong><br />
-                    <a
-                      href="https://www.google.com/maps?q=GF/02,+Shivali+Apartment,+OPP+RANGWALA+TOWER,+Ellis+Bridge,+Ahmedabad+380006,+Gujarat,+India"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="hover-text"
-                    >
-                      GF/02, Shivali Apartment, OPP RANGWALA TOWER,<br />
-                      Ellis Bridge, Ahmedabad 380006, Gujarat, India
-                    </a>
-                  </p>
-                  <p>
-                    <strong>Branch Office:</strong><br />
-                    <a
-                      href="https://www.google.com/maps?q=2,+Shivali+Apartment,+Nr.+Happy+Street,+B/S+Rangwala+Tower,+Law+Garden,+Elisbridge,+Ahmedabad+380006,+Gujarat,+India"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="hover-text"
-                    >
-                      2, Shivali Apartment, Nr. Happy Street, B/S Rangwala
-                      Tower,<br />
-                      Law Garden, Elisbridge, Ahmedabad 380006, Gujarat, India
-                    </a>
-                  </p>
-                </div>
+  <p>
+    <strong>Registered Office:</strong><br />
+    <a
+      href="https://www.google.com/maps?q=2,+Shivali+Apartment,+Nr.+Happy+Street,+B/S+Rangwala+Tower,+Law+Garden,+Elisbridge,+Ahmedabad+380006,+Gujarat,+India"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover-text"
+    >
+      2, Shivali Apartment, Nr. Happy Street, B/S Rangwala Tower,<br />
+      Law Garden, Elisbridge, Ahmedabad 380006, Gujarat, India
+    </a>
+  </p>
+</div>
+
               </li>
 
               <!-- Phone 1 -->
